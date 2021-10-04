@@ -1,0 +1,50 @@
+{
+	"name": "condconsult-page",
+	"private": true,
+	"description": "Company site for condconsult",
+	"version": "0.1.0",
+	"author": "Franciszek marciniak <business@franekmarciniak.pl>",
+	"dependencies": {
+		"babel-plugin-styled-components": "^1.12.0",
+		"dotenv": "^8.2.0",
+		"eslint": "^7.19.0",
+		"gatsby": "^2.32.8",
+		"gatsby-image": "^2.11.0",
+		"gatsby-plugin-manifest": "^2.12.0",
+		"gatsby-plugin-offline": "^3.10.0",
+		"gatsby-plugin-react-helmet": "^3.10.0",
+		"gatsby-plugin-sanity-image": "^0.4.2",
+		"gatsby-plugin-sharp": "^2.14.1",
+		"gatsby-plugin-styled-components": "^3.10.0",
+		"gatsby-source-filesystem": "^2.11.0",
+		"gatsby-source-sanity": "^6.0.5",
+		"gatsby-transformer-sharp": "^2.12.0",
+		"normalize.css": "^8.0.1",
+		"prop-types": "^15.7.2",
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0",
+		"react-helmet": "^6.1.0",
+		"react-icons": "^4.2.0",
+		"react-player": "^2.8.2",
+		"react-transition-group": "^4.4.1",
+		"reset-css": "^5.0.1",
+		"styled-components": "^5.2.1"
+	},
+	"devDependencies": {
+		"@types/node": "^16.10.2",
+		"@types/react": "^17.0.27",
+		"@types/react-dom": "^17.0.9",
+		"prettier": "2.2.1"
+	},
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+		"start": "npm run develop",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean"
+	}
+}

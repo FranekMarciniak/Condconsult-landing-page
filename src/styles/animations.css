@@ -1,0 +1,67 @@
+.menu-primary-enter {
+	position: absolute;
+	transform: translateX(-110%);
+}
+.menu-primary-enter-active {
+	transform: translateX(0%);
+	transition: all 0.2s ease;
+}
+.menu-primary-exit {
+	position: absolute;
+}
+.menu-primary-exit-active {
+	transform: translateX(-110%);
+	transition: all 0.2s ease;
+}
+
+.menu-products-enter {
+	transform: translateX(110%);
+}
+.menu-products-enter-active {
+	transform: translateX(0%);
+	transition: all 0.2s ease;
+}
+.menu-products-exit {
+}
+.menu-products-exit-active {
+	transform: translateX(110%);
+	transition: all 0.2s ease;
+}
+.menu-courses-enter {
+	transform: translateX(110%);
+}
+.menu-courses-enter-active {
+	transform: translateX(0%);
+	transition: all 0.2s ease;
+}
+.menu-courses-exit {
+}
+.menu-courses-exit-active {
+	transform: translateX(110%);
+	transition: all 0.2s ease;
+}
+.styled-back {
+	height: 100vh;
+	width: 150vw;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 3;
+	overflow: hidden;
+	display: none;
+}
+.open {
+}
+.open .styled-back {
+	display: block;
+}
+.blue {
+	background-color: #030235;
+}
+
+@media (min-width: 1101px) {
+	.open .styled-back {
+		display: none;
+	}
+}
