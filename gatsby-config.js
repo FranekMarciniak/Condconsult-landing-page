@@ -62,7 +62,7 @@ module.exports = {
 				isTSX: true, // defaults to false
 				jsxPragma: `jsx`, // defaults to "React"
 				allExtensions: true, // defaults to false
-			}
-		}
+			},
+		},
 	],
 };
