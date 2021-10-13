@@ -3,18 +3,13 @@ import Img from "gatsby-image";
 import * as React from "react";
 import { useState } from "react";
 import styled from "styled-components";
-import arrow from "../../../assets/svg/right-arrow-blue.svg";
 import Button from "../../ButtonCard";
+import SectionStyles from "../../../styles/section";
 
-const StyledSection = styled.section`
-	width: 75%;
-	margin-top: 130px;
-	margin-left: auto;
-	margin-right: auto;
+const Section = styled(SectionStyles)`
 	border-radius: 15px;
 	padding: 75px 80px;
 	background-color: #ebecfb;
-	display: flex;
 	flex-flow: row wrap;
 	@media (max-width: 1434px) {
 		padding: 30px 16px;
@@ -23,7 +18,6 @@ const StyledSection = styled.section`
 		border-radius: 0px;
 		padding: 0;
 		padding-bottom: 30px;
-		width: 91.2%;
 	}
 `;
 const StyledSectionWrapper = styled.div`
@@ -69,20 +63,7 @@ const StyledTextContainer = styled.div`
 		width: calc(100% + 10px);
 		height: 100%;
 	}
-	a:after {
-		content: "";
-		position: absolute;
-		width: 30px;
-		height: 16px;
-		top: 8px;
-		right: -40px;
-		z-index: 15;
-		margin-left: 10px;
-		background-image: url(${arrow});
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-	}
+
 	@media (max-width: 1434px) {
 		padding-left: 0px;
 		text-align: center;
@@ -133,12 +114,12 @@ const StyledButtonsContainer = styled.div`
 	position: relative;
 	* {
 		flex: 1 1 auto;
-		max-height: 30%;
+		max-height: 50%;
 		margin-bottom: 30px;
 	}
 	@media (max-width: 1900px) {
 		* {
-			max-height: 30%;
+			max-height: 50%;
 		}
 	}
 	@media (max-width: 1750px) {
@@ -148,13 +129,13 @@ const StyledButtonsContainer = styled.div`
 	}
 	@media (max-width: 1650px) {
 		* {
-			max-height: 30%;
+			max-height: 50%;
 			font-size: 25px;
 		}
 	}
 	@media (max-width: 1500px) {
 		* {
-			max-height: 30%;
+			max-height: 50%;
 			font-size: 22px;
 		}
 	}
@@ -234,7 +215,7 @@ const PhotosSection: React.FC<{ data: any }> = ({ data }) => {
 	);
 	const [sectionState, setSectionState] = useState(0);
 	return (
-		<StyledSection>
+		<Section>
 			<StyledSectionWrapper>
 				<StyledTextContainer>
 					<h3>{options[sectionState].heading}</h3>
@@ -265,7 +246,7 @@ const PhotosSection: React.FC<{ data: any }> = ({ data }) => {
 					</StyledImageWrapper>
 				</StyledVideoContainer>
 			</StyledSectionWrapper>
-		</StyledSection>
+		</Section>
 	);
 };
 

@@ -1,21 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "../../../styles/button";
-import arrow from "../../../assets/svg/right-arrow-white.svg";
 import { graphql, Link, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
-const StyledSection = styled.section`
-	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 150px;
-	display: flex;
+import SectionStyles from "../../../styles/section";
+const StyledSection = styled(SectionStyles)`
 	@media (max-width: 900px) {
-		width: 91.2%;
-		margin-left: auto;
-		margin-right: auto;
 		flex-direction: column-reverse;
-		margin-top: 150px;
 	}
 `;
 const StyledMobileHeading = styled.div`
@@ -109,30 +100,12 @@ const StyledPhotoWrapper = styled.div`
 	}
 `;
 const StyledIntroButton = styled(Button)`
-	width: 270px;
-	text-align: left;
+	width: max-content;
 	height: 55px;
 	padding: 15px 24px;
 	font-size: 20px;
 	position: relative;
 	letter-spacing: 1px;
-	display: flex;
-	line-height: 25px;
-	align-items: center;
-	font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
-	&:after {
-		content: "";
-		position: absolute;
-		width: 22px;
-		height: 13px;
-		top: 23px;
-		right: 15px;
-		z-index: 15;
-		background-image: url(${arrow});
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-	}
 	@media (max-width: 900px) {
 		margin-left: auto;
 		margin-right: auto;

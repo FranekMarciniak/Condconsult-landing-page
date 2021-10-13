@@ -2,22 +2,15 @@ import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
 import arrow from "../../../assets/svg/right-arrow-blue.svg";
-const StyledSection = styled.section`
-	width: 75%;
-	margin-left: auto;
-	margin-right: auto;
+import SectionStyles from "../../../styles/section";
+const Section = styled(SectionStyles)`
 	background-color: var(--font-primary);
 	color: white;
 	border-radius: 15px;
 	padding: 9% 4%;
-	display: flex;
-	margin-top: 90px;
 	h2 {
-		max-width: 38%;
 		margin-left: auto;
 		margin-right: auto;
-		line-height: 114%;
-		margin-top: 10px;
 	}
 	p {
 		font-size: 28px;
@@ -126,7 +119,7 @@ const ContentWrapper = styled.div`
 `;
 const About: React.FC<{ data: any }> = ({ data }) => {
 	return (
-		<StyledSection>
+		<Section>
 			<HeadingWrapper>
 				<h2>{data.heading}</h2>
 			</HeadingWrapper>
@@ -134,7 +127,7 @@ const About: React.FC<{ data: any }> = ({ data }) => {
 				<p>{data.content}</p>
 				<Link to={data.link}>{data.button}</Link>
 			</ContentWrapper>
-		</StyledSection>
+		</Section>
 	);
 };
 

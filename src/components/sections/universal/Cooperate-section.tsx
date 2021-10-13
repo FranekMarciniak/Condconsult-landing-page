@@ -1,43 +1,9 @@
 import Img from "gatsby-image";
 import * as React from "react";
 import styled from "styled-components";
-const StyledContainer = styled.section`
-	width: 75%;
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
-	align-items: center;
+import SectionStyles from "../../../styles/section";
+const Section = styled(SectionStyles)`
 	flex-direction: column;
-	margin-top: 100px;
-	h2 {
-		text-align: center;
-		max-width: 677px;
-		line-height: 123%;
-	}
-	@media (max-width: 1650px) {
-		h2 {
-			font-size: 50px;
-		}
-	}
-
-	@media (max-width: 1150px) {
-		h2 {
-			font-size: 40px;
-		}
-	}
-	@media (max-width: 900px) {
-		margin-top: 60px;
-		h2 {
-			width: 86%;
-			font-size: 35px;
-		}
-	}
-	@media (max-width: 550px) {
-		h2 {
-			max-width: 65%;
-			font-size: 29px;
-		}
-	}
 `;
 
 const StyledLogosContainer = styled.div`
@@ -73,7 +39,7 @@ const SingleLogoContainer = styled.div`
 `;
 const CooperateSection: React.FC<{ data: any }> = ({ data }) => {
 	return (
-		<StyledContainer>
+		<Section>
 			<h2>We cooperate with important companies</h2>
 			<StyledLogosContainer>
 				{data.images.map((ele: any, i: number) => (
@@ -82,7 +48,7 @@ const CooperateSection: React.FC<{ data: any }> = ({ data }) => {
 					</SingleLogoContainer>
 				))}
 			</StyledLogosContainer>
-		</StyledContainer>
+		</Section>
 	);
 };
 

@@ -18,34 +18,27 @@ const GlobalStyles = createGlobalStyle`
     width: 100%;
     scroll-behavior: smooth;
   }
-* {
+  * {
   box-sizing: border-box;
-}
+  }
   body {
     margin: 0;
     padding: 0;
-  	margin-left: auto;
-	  margin-right: auto;
-  }
-  @media (max-width: 900px) {
-		body{
-          width: 100%;
 
-    }
-	}
-  fieldset {
   }
-
-  button {
-    
-  }
-
-  img {
+    img {
     max-width: 100%;
   }
-button:focus{
+
+  button:focus{
     outline: none;
-}
+  }
+  
+	@media (max-width: 900px) {
+    body{
+          width: 100%;
+    }
+	}
 
 
 `;
