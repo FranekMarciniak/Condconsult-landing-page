@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import CourseCard from "../../CourseCard";
 import Button from "../../../styles/button";
-import { Link, useStaticQuery } from "gatsby";
+import { Link } from "gatsby";
 import arrow from "../../../assets/svg/right-arrow-white.svg";
-
-const StyledSection = styled.section`
+import SectionStyles from "../../../styles/section";
+const Section = styled(SectionStyles)`
 	width: 75%;
 	margin-top: 130px;
 	margin-left: auto;
@@ -69,6 +69,7 @@ const StyledTextWrapper = styled.div`
 		}
 	}
 `;
+
 const StyledCoursesButton = styled(Button)`
 	width: 270px;
 	text-align: center;
@@ -118,7 +119,7 @@ const CoursesSection: React.FC<{
 		(ele: any, index: number) => (courses[index].order = index)
 	);
 	return (
-		<StyledSection>
+		<Section>
 			<StyledTextWrapper>
 				<h2>{text.nodes[0].heading}</h2>
 				<p>{text.nodes[0].content}</p>
@@ -138,7 +139,7 @@ const CoursesSection: React.FC<{
 				content={true}
 				data={courses[1]}
 			/>
-		</StyledSection>
+		</Section>
 	);
 };
 

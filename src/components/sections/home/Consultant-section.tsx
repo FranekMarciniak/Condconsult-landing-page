@@ -13,6 +13,8 @@ const StyledMobileHeading = styled.div`
 	h2 {
 		font-size: 35px;
 		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	margin-bottom: 20px;
 	@media (min-width: 900px) {

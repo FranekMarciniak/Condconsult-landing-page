@@ -9,7 +9,7 @@ import Showcase from "../components/sections/universal/Products-photo-section";
 import Cooperate from "../components/sections/universal/Cooperate-section";
 import Reviews from "../components/sections/universal/Reviews-section";
 import SEO from "../components/seo";
-const IndexPage: React.FC = ({ data }: any): React.ReactElement => {
+const IndexPage: React.FC = ({ data }: any) => {
 	const intro = data.allSanityIntro.edges[0].node;
 	const showcase = data.allSanityHomeShowcase;
 	const cooperate = data.allSanityCooperation.nodes[0];

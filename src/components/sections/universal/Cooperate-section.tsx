@@ -5,7 +5,6 @@ import SectionStyles from "../../../styles/section";
 const Section = styled(SectionStyles)`
 	flex-direction: column;
 `;
-
 const StyledLogosContainer = styled.div`
 	width: 63%;
 	margin-top: 40px;
