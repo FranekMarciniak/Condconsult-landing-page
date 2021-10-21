@@ -8,26 +8,26 @@ import Header from "./sections/universal/Header-section";
 import ContextState from "../context/todoContext/contextState";
 
 const Layout: React.FC<any> = ({ children }) => {
-	const data = useStaticQuery(graphql`
-		query SiteTitleQuery {
-			site {
-				siteMetadata {
-					title
-				}
-			}
-		}
-	`);
-	return (
-		<ContextState>
-			<GlobalStyles />
-			<Typography />
-			<Header />
-			<div>
-				<main>{children}</main>
-			</div>
-			<Footer />
-		</ContextState>
-	);
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+  return (
+    <ContextState>
+      <GlobalStyles />
+      <Typography />
+      <Header />
+      <div>
+        <main>{children}</main>
+      </div>
+      <Footer />
+    </ContextState>
+  );
 };
 
 export default Layout;
