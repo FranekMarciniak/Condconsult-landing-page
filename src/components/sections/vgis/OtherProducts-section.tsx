@@ -1,10 +1,11 @@
+import { Link } from "gatsby";
 import * as React from "react";
 import styled from "styled-components";
-import BIMCollab from "../../../images/BIMCollab-wide.png";
 import arrow from "../../../assets/svg/right-arrow-blue.svg";
+import BIMCollab from "../../../images/BIMCollab-wide.png";
+import SectionStyles from "../../../styles/section";
 
-import { Link } from "gatsby";
-const StyledSection = styled.section`
+const Section = styled(SectionStyles)`
   width: 75%;
   margin-top: 130px;
   margin-left: auto;
@@ -86,7 +87,7 @@ const StyledImageWrapper = styled.div`
 `;
 const OtherProducts: React.FC = () => {
   return (
-    <StyledSection>
+    <Section>
       <h2>See other products</h2>
       <p>
         The right tools are important. Condconsult negotiates software solutions
@@ -104,7 +105,7 @@ const OtherProducts: React.FC = () => {
         at habitant odio eget.
       </p>
       <Link to="/">Learn more about BIMcollab</Link>
-    </StyledSection>
+    </Section>
   );
 };
 

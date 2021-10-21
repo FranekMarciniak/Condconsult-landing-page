@@ -2,18 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import arrow from "../../../assets/svg/right-arrow-white.svg";
 import Button from "../../../styles/button";
+import SectionStyles from "../../../styles/section";
 
-import { Link } from "gatsby";
-const StyledSection = styled.section`
-  width: 75%;
-  margin-left: auto;
-  margin-right: auto;
+const Section = styled(SectionStyles)`
   background-color: var(--font-primary);
   color: white;
   border-radius: 15px;
   padding: 9% 4%;
-  display: flex;
-  margin-top: 90px;
   h2 {
     max-width: 80%;
     margin: auto;
@@ -79,11 +74,8 @@ const StyledSection = styled.section`
     }
   }
   @media (max-width: 900px) {
-    width: 91.2%;
     padding: calc(9% + 30px) 4%;
     border-radius: 0px;
-    margin-left: auto;
-    margin-right: auto;
     flex-direction: column;
     margin-top: 18px;
     align-items: center;
@@ -172,7 +164,7 @@ const ContentWrapper = styled.div`
 `;
 const About: React.FC<{ data: any }> = ({ data }) => {
   return (
-    <StyledSection>
+    <Section>
       <HeadingWrapper>
         <h2>{data.heading}</h2>
       </HeadingWrapper>
@@ -182,7 +174,7 @@ const About: React.FC<{ data: any }> = ({ data }) => {
           {"See BIMcollab price plans"}
         </StyledIntroButton>
       </ContentWrapper>
-    </StyledSection>
+    </Section>
   );
 };
 

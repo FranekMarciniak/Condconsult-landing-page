@@ -1,15 +1,14 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import arrow from "../../../assets/svg/right-arrow-blue.svg";
-import play from "../../../assets/svg/play.svg";
-import Button from "../../ButtonCard";
-import ReactPlayer from "react-player/dailymotion";
 import Img from "gatsby-image";
-const StyledSection = styled.section`
-  width: 75%;
-  margin-top: 130px;
-  margin-left: auto;
-  margin-right: auto;
+import React, { useState } from "react";
+import ReactPlayer from "react-player/dailymotion";
+import styled from "styled-components";
+import play from "../../../assets/svg/play.svg";
+import arrow from "../../../assets/svg/right-arrow-blue.svg";
+import SectionStyles from "../../../styles/section";
+import Button from "../../ButtonCard";
+
+const StyledSection = styled(SectionStyles)`
+  align-items: initial;
   border-radius: 15px;
   padding: 75px 80px;
   background-color: #ebecfb;

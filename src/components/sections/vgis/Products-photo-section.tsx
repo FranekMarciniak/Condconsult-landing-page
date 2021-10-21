@@ -1,10 +1,12 @@
+import { Link } from "gatsby";
+import Img from "gatsby-image";
 import React, { useState } from "react";
 import styled from "styled-components";
 import arrow from "../../../assets/svg/right-arrow-blue.svg";
+import SectionStyles from "../../../styles/section";
 import Button from "../../ButtonCard";
-import Img from "gatsby-image";
-import { Link } from "gatsby";
-const StyledSection = styled.section`
+
+const Section = styled(SectionStyles)`
   width: 75%;
   margin-top: 130px;
   margin-left: auto;
@@ -205,7 +207,7 @@ const VideoSection = ({ data }: any) => {
   options.forEach((ele: any, index: number) => (options[index].order = index));
   const [sectionState, setSectionState] = useState(0);
   return (
-    <StyledSection>
+    <Section>
       <StyledSectionWrapper>
         <StyledTextContainer>
           <h3>{options[sectionState].heading}</h3>
@@ -232,7 +234,7 @@ const VideoSection = ({ data }: any) => {
           </StyledImageWrapper>
         </StyledVideoContainer>
       </StyledSectionWrapper>
-    </StyledSection>
+    </Section>
   );
 };
 

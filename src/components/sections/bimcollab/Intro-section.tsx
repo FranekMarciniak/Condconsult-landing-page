@@ -4,10 +4,13 @@ import arrow from "../../../assets/svg/right-arrow-white.svg";
 import { ThemeContext } from "../../../context/todoContext/contextState";
 import bimcollab from "../../../images/BIMCollab-intro.png";
 import Button from "../../../styles/button";
-const StyledSection = styled.section`
+import SectionStyles from "../../../styles/section";
+
+const Section = styled(SectionStyles)`
   width: 100%;
   background-color: #ebecfb;
   padding: 100px 0px;
+  margin-top: 0;
   @media (max-width: 900px) {
     padding: 0px 0px 60px 0px;
   }
@@ -108,7 +111,7 @@ const Intro: React.FC = () => {
     theme.changeBlue();
   }, [theme]);
   return (
-    <StyledSection>
+    <Section>
       <StyledSectionWrapper>
         <h1>There`s a better way to manage your BIM issues</h1>
         <StyledContentWrapper>
@@ -124,7 +127,7 @@ const Intro: React.FC = () => {
           </StyledImageWrapper>
         </StyledContentWrapper>
       </StyledSectionWrapper>
-    </StyledSection>
+    </Section>
   );
 };
 

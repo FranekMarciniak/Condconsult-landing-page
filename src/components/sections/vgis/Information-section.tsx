@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-const StyledSection = styled.section`
-  width: 75%;
-  display: flex;
+import SectionStyles from "../../../styles/section";
+const Section = styled(SectionStyles)`
   justify-content: space-evenly;
   flex-flow: wrap row;
   align-items: flex-start;
-  margin: 130px auto 0 auto;
   div {
     color: #fff;
     margin-bottom: 40px;
@@ -78,7 +76,7 @@ const StyledSection = styled.section`
 
 const InformationSection: React.FC<{ color: string }> = ({ color }) => {
   return (
-    <StyledSection color={color}>
+    <Section color={color}>
       <div>
         <h4>ROI</h4>
         <p>10:1 - 15:1</p>
@@ -99,7 +97,7 @@ const InformationSection: React.FC<{ color: string }> = ({ color }) => {
         <p>30 - 50%</p>
         <p>less time required for clash reviews</p>
       </div>
-    </StyledSection>
+    </Section>
   );
 };
 

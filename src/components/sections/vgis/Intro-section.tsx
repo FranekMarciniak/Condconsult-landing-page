@@ -1,14 +1,16 @@
-import React, { useEffect, useContext } from "react";
-import styled from "styled-components";
-import Button from "../../../styles/button";
-import arrow from "../../../assets/svg/right-arrow-white.svg";
-import { ThemeContext } from "../../../context/todoContext/contextState";
 import { Link } from "gatsby";
 import Img from "gatsby-image";
-const StyledSection = styled.section`
+import React, { useContext, useEffect } from "react";
+import styled from "styled-components";
+import arrow from "../../../assets/svg/right-arrow-white.svg";
+import { ThemeContext } from "../../../context/todoContext/contextState";
+import Button from "../../../styles/button";
+import SectionStyles from "../../../styles/section";
+const Section = styled(SectionStyles)`
   width: 100%;
   background-color: #ffe1e1;
   padding: 100px 0px;
+  margin-top: 0;
   @media (max-width: 900px) {
     padding: 0px 0px 60px 0px;
   }
@@ -147,7 +149,7 @@ const IntroSection: React.FC<{ data: any }> = ({ data }) => {
     theme.changePink();
   }, [theme]);
   return (
-    <StyledSection>
+    <Section>
       <StyledSectionWrapper>
         <h1>{data.heading}</h1>
         <StyledContentWrapper>
@@ -165,7 +167,7 @@ const IntroSection: React.FC<{ data: any }> = ({ data }) => {
           </StyledIntroButtonMobile>
         </StyledContentWrapper>
       </StyledSectionWrapper>
-    </StyledSection>
+    </Section>
   );
 };
 

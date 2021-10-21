@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import styled from "styled-components";
 import ReactPlayer from "react-player/dailymotion";
+import styled from "styled-components";
 import play from "../../../assets/svg/play.svg";
+import SectionStyles from "../../../styles/section";
 
-const StyledSection = styled.section`
-  width: 75%;
+const Section = styled(SectionStyles)`
   padding: 75px 0;
-  margin-left: auto;
-  margin-right: auto;
   background-color: #ffefbf;
   border-radius: 15px;
   @media (max-width: 900px) {
@@ -96,7 +94,7 @@ const StyledVideoContainer = styled.div`
 const VideoSection: React.FC = () => {
   const [playingState, setPlayingState] = useState(false);
   return (
-    <StyledSection>
+    <Section>
       <StyledTextContainer>
         <h2>
           High - accuracy augmented reality for BIM, GIS and Reality Capture
@@ -126,7 +124,7 @@ const VideoSection: React.FC = () => {
           />
         )}
       </StyledVideoContainer>
-    </StyledSection>
+    </Section>
   );
 };
 

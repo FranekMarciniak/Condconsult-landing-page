@@ -1,15 +1,11 @@
+import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import vGis from "../../../images/vgis-wide.png";
 import arrow from "../../../assets/svg/right-arrow-blue.svg";
+import vGis from "../../../images/vgis-wide.png";
+import SectionStyles from "../../../styles/section";
 
-import { Link } from "gatsby";
-const StyledSection = styled.section`
-  width: 75%;
-  margin-top: 130px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
+const Section = styled(SectionStyles)`
   flex-direction: column;
   justify-content: center;
   h2 {
@@ -59,8 +55,6 @@ const StyledSection = styled.section`
     background-size: cover;
   }
   @media (max-width: 900px) {
-    width: 91.2%;
-    margin-top: 40px;
     h2 {
       font-size: 30px;
       margin-bottom: 20px;
@@ -86,7 +80,7 @@ const StyledImageWrapper = styled.div`
 `;
 const OtherProducts: React.FC = () => {
   return (
-    <StyledSection>
+    <Section>
       <h2>See other products</h2>
       <p>
         The right tools are important. Condconsult negotiates software solutions
@@ -104,7 +98,7 @@ const OtherProducts: React.FC = () => {
         at habitant odio eget.
       </p>
       <Link to="/">Learn more about vGis</Link>
-    </StyledSection>
+    </Section>
   );
 };
 

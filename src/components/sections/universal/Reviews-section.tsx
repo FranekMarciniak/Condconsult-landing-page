@@ -2,11 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import SectionStyles from "../../../styles/section";
 import StyledCard from "../../ReviewCard";
-const StyledSection = styled(SectionStyles)`
-  width: 75%;
-  margin-top: 130px;
-  margin-left: auto;
-  margin-right: auto;
+const Section = styled(SectionStyles)`
+  display: block;
   h2 {
     margin-bottom: 70px;
     margin-left: auto;
@@ -96,7 +93,7 @@ const ReviewsSection: React.FC<{ data: any }> = ({ data }) => {
   );
   reviews.forEach((ele: any, index: any) => (reviews[index].order = index));
   return (
-    <StyledSection>
+    <Section>
       <h2>What our customers say</h2>
       <StyledReviewsWrapper>
         <StyledCard color="#DE767B" data={reviews[0]} />
@@ -104,7 +101,7 @@ const ReviewsSection: React.FC<{ data: any }> = ({ data }) => {
         <StyledCard color="#090031" data={reviews[2]} />
         <StyledCard color="#FFCA29" data={reviews[3]} />
       </StyledReviewsWrapper>
-    </StyledSection>
+    </Section>
   );
 };
 

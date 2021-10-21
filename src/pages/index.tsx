@@ -5,8 +5,8 @@ import About from "../components/sections/home/About-section";
 import Consult from "../components/sections/home/Consultant-section";
 import Courses from "../components/sections/home/Courses-section";
 import Intro from "../components/sections/home/Intro-section";
-import Showcase from "../components/sections/universal/Products-photo-section";
 import Cooperate from "../components/sections/universal/Cooperate-section";
+import Showcase from "../components/sections/universal/Products-photo-section";
 import Reviews from "../components/sections/universal/Reviews-section";
 import SEO from "../components/seo";
 const IndexPage: React.FC = ({ data }: any) => {

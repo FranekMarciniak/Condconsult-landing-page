@@ -1,13 +1,15 @@
 import * as React from "react";
 import styled from "styled-components";
 import Checkmark from "../../../assets/svg/Checkmark-circle.svg";
-import { StyledInput as Input } from "../../FormSection";
 import TempButton from "../../../styles/button";
-const StyledSection = styled.section`
-  width: 75%;
-  margin: 150px auto 0 auto;
+import SectionStyles from "../../../styles/section";
+import { StyledInput as Input } from "../../FormSection";
+
+const Section = styled(SectionStyles)`
+  display: block;
   h2 {
     text-align: center;
+    margin: 0 auto;
   }
   @media (max-width: 900px) {
     width: 91.2%;
@@ -140,7 +142,7 @@ const StyledMobilePrice = styled.span`
 `;
 const PricingSection: React.FC = () => {
   return (
-    <StyledSection>
+    <Section>
       <h2>AR Software and Hardware Pricing</h2>
       <StyledCardsWrapper>
         <StyledTextCard>
@@ -180,7 +182,7 @@ const PricingSection: React.FC = () => {
           </fieldset>
         </StyledFormCard>
       </StyledCardsWrapper>
-    </StyledSection>
+    </Section>
   );
 };
 

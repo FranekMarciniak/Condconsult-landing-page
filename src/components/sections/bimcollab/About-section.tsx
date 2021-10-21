@@ -1,19 +1,11 @@
+import Img from "gatsby-image";
 import React from "react";
 import styled from "styled-components";
-import Img from "gatsby-image";
-const StyledSection = styled.section`
-  width: 75%;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 113px;
+import SectionStyles from "../../../styles/section";
 
+const Section = styled(SectionStyles)`
   @media (max-width: 900px) {
-    margin-top: 50px;
-    width: 91.2%;
     flex-flow: wrap column-reverse;
-    margin-left: auto;
-    margin-right: auto;
   }
 `;
 const StyledPhotoWrapper = styled.div`
@@ -106,7 +98,7 @@ const StyledTextWrapper = styled.div`
 `;
 const AboutSection: React.FC<{ data: any }> = ({ data }) => {
   return (
-    <StyledSection>
+    <Section>
       <StyledPhotoWrapper>
         <Img fluid={data.image.asset.fluid} alt="vgis visualization"></Img>
       </StyledPhotoWrapper>
@@ -115,7 +107,7 @@ const AboutSection: React.FC<{ data: any }> = ({ data }) => {
         <h3>{data.subHeading}</h3>
         <p>{data.content}</p>
       </StyledTextWrapper>
-    </StyledSection>
+    </Section>
   );
 };
 
