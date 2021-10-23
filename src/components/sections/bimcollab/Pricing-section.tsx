@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import arrow from "../../../assets/svg/right-arrow-white.svg";
 import Button from "../../../styles/button";
 import SectionStyles from "../../../styles/section";
 
@@ -37,20 +36,7 @@ const Section = styled(SectionStyles)`
     width: calc(100% + 10px);
     height: 100%;
   }
-  a:after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 16px;
-    top: 8px;
-    right: -40px;
-    z-index: 15;
-    margin-left: 10px;
-    background-image: url(${arrow});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+
   @media (max-width: 1650px) {
     h2 {
       font-size: 50px;
@@ -125,25 +111,10 @@ const StyledIntroButton = styled(Button)<{ to: string }>`
   align-items: center;
   /* justify-content: center; */
   font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
-  &:after {
-    content: "";
-    position: absolute;
-    width: 22px;
-    height: 13px;
-    top: 21px;
-    right: 20px;
-    z-index: 15;
-    background-image: url(${arrow});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+
   @media (max-width: 900px) {
     margin-left: auto;
     margin-right: auto;
-    &:after {
-      top: 40%;
-    }
   }
   @media (max-width: 350px) {
     margin-left: auto;

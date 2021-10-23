@@ -5,6 +5,7 @@ import play from "../../../assets/svg/play.svg";
 import SectionStyles from "../../../styles/section";
 
 const Section = styled(SectionStyles)`
+  display: block;
   padding: 75px 0;
   background-color: #ffefbf;
   border-radius: 15px;
@@ -20,9 +21,12 @@ const StyledTextContainer = styled.section`
   h2 {
     margin-bottom: 50px;
     line-height: 117%;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
   }
   p {
-    font-size: 23px;
+    font-size: 26px;
     line-height: 117%;
     letter-spacing: 0.4px;
   }

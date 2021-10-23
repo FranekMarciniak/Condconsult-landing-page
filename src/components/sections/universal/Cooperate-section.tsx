@@ -25,7 +25,6 @@ const SingleLogoContainer = styled.div`
   margin: 15px 15px;
   * {
     margin-top: auto;
-    margin-top: auto;
   }
   @media (max-width: 600px) {
     min-width: 100px;

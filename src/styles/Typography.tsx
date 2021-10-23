@@ -1,10 +1,10 @@
 import { createGlobalStyle } from "styled-components";
-
-import poppinsHeading from "../assets/fonts/Poppins-SemiBold.ttf";
-import poppinsRegular from "../assets/fonts/Poppins-Regular.ttf";
-import poppinsMedium from "../assets/fonts/Poppins-Medium.ttf";
-import poppinsLight from "../assets/fonts/Poppins-Light.ttf";
 import montserrat from "../assets/fonts/Montserrat-Regular.ttf";
+import poppinsLight from "../assets/fonts/Poppins-Light.ttf";
+import poppinsMedium from "../assets/fonts/Poppins-Medium.ttf";
+import poppinsRegular from "../assets/fonts/Poppins-Regular.ttf";
+import poppinsHeading from "../assets/fonts/Poppins-SemiBold.ttf";
+
 const Typography = createGlobalStyle`
 
   @font-face {
@@ -83,7 +83,6 @@ const Typography = createGlobalStyle`
 			margin-bottom: 20px;
     }
 		h2 {
-			width: 86%;
 			font-size: 35px;
 		}
     body{
@@ -93,7 +92,6 @@ const Typography = createGlobalStyle`
 	}
 	@media (max-width: 550px) {
 		h2 {
-			max-width: 65%;
 			font-size: 29px;
 		}
 	}

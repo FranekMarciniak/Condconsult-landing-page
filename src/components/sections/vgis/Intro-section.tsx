@@ -2,7 +2,6 @@ import { Link } from "gatsby";
 import Img from "gatsby-image";
 import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
-import arrow from "../../../assets/svg/right-arrow-white.svg";
 import { ThemeContext } from "../../../context/todoContext/contextState";
 import Button from "../../../styles/button";
 import SectionStyles from "../../../styles/section";
@@ -55,28 +54,14 @@ const StyledContentWrapper = styled.div`
 const StyledIntroButton = styled(Button)`
   width: 232px;
   height: 55px;
-  padding: 15px 46px;
   font-size: 20px;
   position: relative;
   margin-left: auto;
   margin-right: auto;
   letter-spacing: 1px;
   display: flex;
+  justify-content: center;
   align-items: center;
-  font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
-  &:after {
-    content: "";
-    position: absolute;
-    width: 22px;
-    height: 13px;
-    top: 21px;
-    right: 36px;
-    z-index: 15;
-    background-image: url(${arrow});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
 `;
 const StyledTextWrapper = styled.div`
   width: 100%;

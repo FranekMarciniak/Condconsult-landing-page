@@ -1,11 +1,10 @@
-import React from "react";
-import { FC } from "react";
+import { Link } from "gatsby";
+import React, { FC } from "react";
 import styled from "styled-components";
-import Button from "../styles/button";
-import Hamburger from "./Burger";
 import arrowDark from "../assets/svg/small-arrow-dark.svg";
 import arrowWhite from "../assets/svg/small-arrow-white.svg";
-import { Link } from "gatsby";
+import Button from "../styles/button";
+import Hamburger from "./Burger";
 const StyledNav = styled.nav`
   width: 83.5%;
   display: flex;
@@ -53,6 +52,7 @@ const StyledCSWrapper = styled.div`
   }
   button {
     margin: 0 15px;
+    padding: 5px 15px;
   }
 `;
 

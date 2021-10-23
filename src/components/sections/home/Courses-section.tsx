@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
 import styled from "styled-components";
-import arrow from "../../../assets/svg/right-arrow-white.svg";
 import Button from "../../../styles/button";
 import SectionStyles from "../../../styles/section";
 import CourseCard from "../../CourseCard";
@@ -79,19 +78,7 @@ const StyledCoursesButton = styled(Button)`
   margin-left: auto;
   margin-right: auto;
   font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
-  &:after {
-    content: "";
-    position: absolute;
-    width: 22px;
-    height: 13px;
-    top: 22px;
-    right: 40px;
-    z-index: 15;
-    background-image: url(${arrow});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+
   @media (max-width: 900px) {
     margin-left: auto;
     margin-right: auto;

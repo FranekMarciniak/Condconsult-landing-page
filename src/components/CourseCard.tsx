@@ -1,13 +1,13 @@
 import { Link } from "gatsby";
+import Img from "gatsby-image";
 import React from "react";
 import styled from "styled-components";
 import arrow2D54BC from "../assets/svg/right-arrow-#2D54BC.svg";
-import Img from "gatsby-image";
-import arrowFFCA29 from "../assets/svg/right-arrow-#FFCA29.svg";
 import arrow3A57FF from "../assets/svg/right-arrow-#3A57FF.svg";
+import arrowFFCA29 from "../assets/svg/right-arrow-#FFCA29.svg";
 import whiteArrow from "../assets/svg/right-arrow-white.svg";
-import colorChanger from "../utils/colorChanger";
 import Button from "../styles/button";
+import colorChanger from "../utils/colorChanger";
 const StyledBox = styled.div`
   height: 486px;
   padding: 45px 40px;

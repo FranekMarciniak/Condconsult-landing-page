@@ -12,6 +12,7 @@ const Button = styled.button`
   cursor: pointer;
   display: flex;
   align-items: center;
+  justify-content: center;
   &:focus {
     outline: none;
   }

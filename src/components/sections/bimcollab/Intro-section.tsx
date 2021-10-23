@@ -1,6 +1,5 @@
 import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
-import arrow from "../../../assets/svg/right-arrow-white.svg";
 import { ThemeContext } from "../../../context/todoContext/contextState";
 import bimcollab from "../../../images/BIMCollab-intro.png";
 import Button from "../../../styles/button";
@@ -87,19 +86,7 @@ const StyledIntroButton = styled(Button)`
   align-items: center;
   /* justify-content: center; */
   font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
-  &:after {
-    content: "";
-    position: absolute;
-    width: 22px;
-    height: 13px;
-    top: 21px;
-    right: 43px;
-    z-index: 15;
-    background-image: url(${arrow});
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
+
   @media (max-width: 900px) {
     margin-left: auto;
     margin-right: auto;

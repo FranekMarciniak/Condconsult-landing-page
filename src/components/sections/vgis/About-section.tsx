@@ -46,6 +46,8 @@ const StyledTextWrapper = styled.div`
   }
   h2 {
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
   h3 {
     max-width: 424px;

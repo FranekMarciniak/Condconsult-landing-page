@@ -287,7 +287,6 @@ const VideoSection: React.FC<{ data: any }> = ({ data }) => {
             </SingleLogoContainer>
           ))}
         </LogosContainer>
-        {/* <Link to="/vgis">{options[sectionState].button}</Link> */}
       </StyledTextContainer>
       <StyledButtonsContainer>
         {options.map((ele: any, i: number) => (
