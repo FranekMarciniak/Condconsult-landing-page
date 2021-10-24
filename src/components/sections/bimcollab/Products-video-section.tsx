@@ -11,7 +11,7 @@ const StyledSection = styled(SectionStyles)`
   align-items: initial;
   border-radius: 15px;
   padding: 75px 80px;
-  background-color: #ebecfb;
+  background-color: var(--gray);
   display: flex;
   flex-flow: row wrap;
   @media (max-width: 1434px) {

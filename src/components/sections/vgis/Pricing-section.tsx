@@ -43,7 +43,7 @@ const StyledCard = styled.div`
   }
 `;
 const StyledTextCard = styled(StyledCard)`
-  background-color: #090031;
+  background-color: var(--black);
   padding: 52px 60px;
 
   color: #fff;

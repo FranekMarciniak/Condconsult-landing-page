@@ -4,7 +4,7 @@ import FormSection from '../../FormSection';
 import FooterSection from '../../FooterSection';
 const StyledFooter = styled.div`
   width: 100%;
-  background-color: #030235;
+  background-color: var(--font-primary);
   margin-top: 130px;
 `;
 const Footer: React.FC = () => {

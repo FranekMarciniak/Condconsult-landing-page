@@ -23,7 +23,7 @@ const Section = styled(SectionStyles)`
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-    color: #3a57ff;
+    color: var(--link);
     line-height: 25px;
     position: relative;
   }

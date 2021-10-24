@@ -7,7 +7,7 @@ import SectionStyles from '../../../styles/section';
 const Section = styled(SectionStyles)`
   display: block;
   padding: 75px 0;
-  background-color: #ffefbf;
+  background-color: var(--yellow);
   border-radius: 15px;
   @media (max-width: 900px) {
     width: 100%;

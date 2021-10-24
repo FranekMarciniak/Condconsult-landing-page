@@ -12,7 +12,7 @@ const StyledSection = styled.section`
   margin-right: auto;
   border-radius: 15px;
   padding: 75px 80px;
-  background-color: #ebecfb;
+  background-color: var(--gray);
   display: flex;
   flex-flow: row wrap;
   @media (max-width: 1434px) {
@@ -43,7 +43,7 @@ const StyledTextContainer = styled.div`
   a {
     font-size: 24px;
     font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #3a57ff;
+    color: var(--link);
     line-height: 25px;
     position: relative;
   }

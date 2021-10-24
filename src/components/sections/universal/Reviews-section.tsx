@@ -60,7 +60,7 @@ const StyledReviewsWrapper = styled.div`
   & > article:nth-child(4) {
     width: 36%;
     margin-top: 35px;
-    color: #090031;
+    color: var(--black);
   }
   @media (max-width: 900px) {
     width: 100%;

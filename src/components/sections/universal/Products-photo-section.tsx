@@ -9,7 +9,7 @@ import SectionStyles from '../../../styles/section';
 const Section = styled(SectionStyles)`
   border-radius: 15px;
   padding: 75px 80px;
-  background-color: #ebecfb;
+  background-color: var(--gray);
   flex-flow: row wrap;
   @media (max-width: 1434px) {
     padding: 30px 16px;
@@ -51,7 +51,7 @@ const StyledTextContainer = styled.div`
   a {
     font-size: 24px;
     font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #3a57ff;
+    color: var(--link);
     line-height: 25px;
     position: relative;
   }

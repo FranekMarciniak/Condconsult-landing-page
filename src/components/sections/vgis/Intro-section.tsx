@@ -7,7 +7,7 @@ import Button from '../../../styles/button';
 import SectionStyles from '../../../styles/section';
 const Section = styled(SectionStyles)`
   width: 100%;
-  background-color: #ffe1e1;
+  background-color: var(--pastel-pink);
   padding: 100px 0px;
   margin-top: 0;
   @media (max-width: 900px) {
@@ -24,7 +24,7 @@ const StyledSectionWrapper = styled.div`
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #030235;
+    color: var(--font-primary);
   }
 
   @media (min-width: 2200px) {
@@ -69,7 +69,7 @@ const StyledTextWrapper = styled.div`
     font-size: 23px;
     line-height: 152%;
     letter-spacing: 0.4px;
-    color: #030235;
+    color: var(--font-primary);
     max-width: 700px;
     text-align: center;
     margin-left: auto;

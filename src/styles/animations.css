@@ -57,7 +57,7 @@
 	display: block;
 }
 .blue {
-	background-color: #030235;
+	background-color: var(--font-primary);
 }
 
 @media (min-width: 1101px) {

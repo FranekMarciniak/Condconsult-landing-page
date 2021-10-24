@@ -38,7 +38,7 @@ const Section = styled(SectionStyles)`
   a {
     font-size: 24px;
     font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #3a57ff;
+    color: var(--link);
     margin: 25px auto;
     line-height: 25px;
     position: relative;
@@ -97,7 +97,7 @@ const OtherProducts: React.FC = () => {
         <img src={BIMCollab}></img>
       </StyledImageWrapper>
       <h3>BIMcollab</h3>
-      <p style={{ color: '#9b99ae' }}>
+      <p style={{ color: 'var(--font-tertiary)' }}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus magna non in morbi vel urna elit suspendisse massa. Nunc elementum
         eleifend amet nulla condimentum feugiat gravida nulla sed. Sed vestibulum dolor, at habitant odio eget.
       </p>

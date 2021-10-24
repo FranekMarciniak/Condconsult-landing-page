@@ -196,7 +196,7 @@ const FooterSection: React.FC = () => {
         </StyledSocialContainer>
       </StyledMobileRow>
       <FooterText>
-        <p>© Copyright 2021 CONDCONSULT AS. All rights reserved.</p>
+        <p>© Copyright 2021 Franek Marciniak. All rights reserved.</p>
       </FooterText>
     </FooterWrapper>
   );
