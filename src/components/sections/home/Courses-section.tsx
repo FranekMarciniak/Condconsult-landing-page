@@ -1,9 +1,9 @@
-import { Link } from "gatsby";
-import React from "react";
-import styled from "styled-components";
-import Button from "../../../styles/button";
-import SectionStyles from "../../../styles/section";
-import CourseCard from "../../CourseCard";
+import { Link } from 'gatsby';
+import React from 'react';
+import styled from 'styled-components';
+import Button from '../../../styles/button';
+import SectionStyles from '../../../styles/section';
+import CourseCard from '../../CourseCard';
 const Section = styled(SectionStyles)`
   flex-flow: wrap row;
   align-items: flex-start;
@@ -77,7 +77,7 @@ const StyledCoursesButton = styled(Button)`
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   @media (max-width: 900px) {
     margin-left: auto;
@@ -93,9 +93,7 @@ const CoursesSection: React.FC<{
   data: any;
   text: { nodes: nodeInterface[] };
 }> = ({ data, text }) => {
-  const courses = data.nodes.sort(
-    (a: { order: number }, b: { order: number }) => a.order - b.order
-  );
+  const courses = data.nodes.sort((a: { order: number }, b: { order: number }) => a.order - b.order);
   courses.forEach((ele: any, index: number) => (courses[index].order = index));
   return (
     <Section>
@@ -106,13 +104,8 @@ const CoursesSection: React.FC<{
           {text.nodes[0].button}
         </StyledCoursesButton>
       </StyledTextWrapper>
-      <CourseCard size="48%" color="#4666F6" content={true} data={courses[0]} />
-      <CourseCard
-        size="49.5%"
-        color="#FFCA29"
-        content={true}
-        data={courses[1]}
-      />
+      <CourseCard size='48%' color='#4666F6' content={true} data={courses[0]} />
+      <CourseCard size='49.5%' color='#FFCA29' content={true} data={courses[1]} />
     </Section>
   );
 };

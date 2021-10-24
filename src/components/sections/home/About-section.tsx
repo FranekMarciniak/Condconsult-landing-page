@@ -1,8 +1,8 @@
-import { Link } from "gatsby";
-import React from "react";
-import styled from "styled-components";
-import arrow from "../../../assets/svg/right-arrow-blue.svg";
-import SectionStyles from "../../../styles/section";
+import { Link } from 'gatsby';
+import React from 'react';
+import styled from 'styled-components';
+import arrow from '../../../assets/svg/right-arrow-blue.svg';
+import SectionStyles from '../../../styles/section';
 const Section = styled(SectionStyles)`
   background-color: var(--font-primary);
   color: white;
@@ -19,7 +19,7 @@ const Section = styled(SectionStyles)`
   }
   a {
     font-size: 24px;
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: auto;
     margin-right: auto;
     align-self: center;
@@ -28,7 +28,7 @@ const Section = styled(SectionStyles)`
     position: relative;
   }
   a:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -36,7 +36,7 @@ const Section = styled(SectionStyles)`
     height: 100%;
   }
   a:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 30px;
     height: 16px;

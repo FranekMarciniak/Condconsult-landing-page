@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import SectionStyles from "../../../styles/section";
+import React from 'react';
+import styled from 'styled-components';
+import SectionStyles from '../../../styles/section';
 const Section = styled(SectionStyles)`
   justify-content: space-evenly;
   flex-flow: wrap row;
@@ -16,17 +16,17 @@ const Section = styled(SectionStyles)`
     }
   }
   div p:nth-child(2) {
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: 144%;
     letter-spacing: 0px;
     text-align: center;
-    color: ${(props) => props.color};
+    color: ${props => props.color};
   }
   div p:nth-child(3) {
-    font-family: Montserrat, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: Montserrat, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;

@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import FormSection from "../../FormSection";
-import FooterSection from "../../FooterSection";
+import React from 'react';
+import styled from 'styled-components';
+import FormSection from '../../FormSection';
+import FooterSection from '../../FooterSection';
 const StyledFooter = styled.div`
   width: 100%;
   background-color: #030235;

@@ -1,12 +1,12 @@
-import React, { useContext } from "react";
-import styled from "styled-components";
-import Logo from "../../logo";
-import Nav from "../../Nav";
-import { ThemeContext } from "../../../context/todoContext/contextState";
+import React, { useContext } from 'react';
+import styled from 'styled-components';
+import Logo from '../../logo';
+import Nav from '../../Nav';
+import { ThemeContext } from '../../../context/todoContext/contextState';
 export const StyledHeader = styled.header`
   width: 100%;
   height: 98px;
-  background-color: ${(props) => props.color};
+  background-color: ${props => props.color};
 `;
 const StyledWrapper = styled.div`
   width: 75%;

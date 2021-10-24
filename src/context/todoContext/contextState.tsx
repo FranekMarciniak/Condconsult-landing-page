@@ -1,5 +1,5 @@
-import React, { useReducer, createContext } from "react";
-import contextReducer from "./contexReducer";
+import React, { useReducer, createContext } from 'react';
+import contextReducer from './contexReducer';
 interface IContextProps {
   color: string;
   changeLight: () => void;
@@ -10,19 +10,19 @@ interface IContextProps {
 export const ThemeContext = createContext({} as IContextProps);
 const { Provider } = ThemeContext;
 function ContextState(props: any): JSX.Element {
-  const initialState = "#fff" as string;
+  const initialState = '#fff' as string;
   const [state, dispatch] = useReducer(contextReducer, initialState);
   const changeLight = () => {
-    dispatch({ type: "light" });
+    dispatch({ type: 'light' });
   };
   const changeDark = () => {
-    dispatch({ type: "dark" });
+    dispatch({ type: 'dark' });
   };
   const changePink = () => {
-    dispatch({ type: "pink" });
+    dispatch({ type: 'pink' });
   };
   const changeBlue = () => {
-    dispatch({ type: "blue" });
+    dispatch({ type: 'blue' });
   };
   return (
     <Provider

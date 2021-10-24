@@ -1,7 +1,7 @@
-import Img from "gatsby-image";
-import * as React from "react";
-import styled from "styled-components";
-import SectionStyles from "../../../styles/section";
+import Img from 'gatsby-image';
+import * as React from 'react';
+import styled from 'styled-components';
+import SectionStyles from '../../../styles/section';
 const Section = styled(SectionStyles)`
   flex-direction: column;
 `;

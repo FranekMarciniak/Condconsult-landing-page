@@ -1,14 +1,14 @@
-import { graphql } from "gatsby";
-import * as React from "react";
-import Layout from "../components/layout";
-import About from "../components/sections/home/About-section";
-import Consult from "../components/sections/home/Consultant-section";
-import Courses from "../components/sections/home/Courses-section";
-import Intro from "../components/sections/home/Intro-section";
-import Cooperate from "../components/sections/universal/Cooperate-section";
-import Showcase from "../components/sections/universal/Products-photo-section";
-import Reviews from "../components/sections/universal/Reviews-section";
-import SEO from "../components/seo";
+import { graphql } from 'gatsby';
+import * as React from 'react';
+import Layout from '../components/layout';
+import About from '../components/sections/home/About-section';
+import Consult from '../components/sections/home/Consultant-section';
+import Courses from '../components/sections/home/Courses-section';
+import Intro from '../components/sections/home/Intro-section';
+import Cooperate from '../components/sections/universal/Cooperate-section';
+import Showcase from '../components/sections/universal/Products-photo-section';
+import Reviews from '../components/sections/universal/Reviews-section';
+import SEO from '../components/seo';
 const IndexPage: React.FC = ({ data }: any) => {
   const intro = data.allSanityIntro.edges[0].node;
   const showcase = data.allSanityHomeShowcase;
@@ -20,7 +20,7 @@ const IndexPage: React.FC = ({ data }: any) => {
   const reviews = data.allSanityReviews;
   return (
     <Layout>
-      <SEO title="Condconsult" />
+      <SEO title='Condconsult' />
       <Intro data={intro} />
       <Showcase data={showcase} />
       <Cooperate data={cooperate} />

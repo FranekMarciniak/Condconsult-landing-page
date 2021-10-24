@@ -1,7 +1,7 @@
-import Img from "gatsby-image";
-import React from "react";
-import styled from "styled-components";
-import SectionStyles from "../../../styles/section";
+import Img from 'gatsby-image';
+import React from 'react';
+import styled from 'styled-components';
+import SectionStyles from '../../../styles/section';
 const Section = styled(SectionStyles)`
   width: 75%;
   @media (max-width: 900px) {
@@ -102,7 +102,7 @@ const AboutSection: React.FC<{ data: any }> = ({ data }) => {
   return (
     <Section>
       <StyledPhotoWrapper>
-        <Img fluid={data.image.asset.fluid} alt="vgis visualization"></Img>
+        <Img fluid={data.image.asset.fluid} alt='vgis visualization'></Img>
       </StyledPhotoWrapper>
       <StyledTextWrapper>
         <h2>{data.heading}</h2>

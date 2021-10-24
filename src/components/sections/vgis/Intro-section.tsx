@@ -1,10 +1,10 @@
-import { Link } from "gatsby";
-import Img from "gatsby-image";
-import React, { useContext, useEffect } from "react";
-import styled from "styled-components";
-import { ThemeContext } from "../../../context/todoContext/contextState";
-import Button from "../../../styles/button";
-import SectionStyles from "../../../styles/section";
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
+import React, { useContext, useEffect } from 'react';
+import styled from 'styled-components';
+import { ThemeContext } from '../../../context/todoContext/contextState';
+import Button from '../../../styles/button';
+import SectionStyles from '../../../styles/section';
 const Section = styled(SectionStyles)`
   width: 100%;
   background-color: #ffe1e1;
@@ -145,9 +145,9 @@ const IntroSection: React.FC<{ data: any }> = ({ data }) => {
             </StyledIntroButton>
           </StyledTextWrapper>
           <StyledImageWrapper>
-            <Img fluid={data.image.asset.fluid} alt="vgis in action"></Img>
+            <Img fluid={data.image.asset.fluid} alt='vgis in action'></Img>
           </StyledImageWrapper>
-          <StyledIntroButtonMobile as={Link} to="/a">
+          <StyledIntroButtonMobile as={Link} to='/a'>
             Try it now!
           </StyledIntroButtonMobile>
         </StyledContentWrapper>

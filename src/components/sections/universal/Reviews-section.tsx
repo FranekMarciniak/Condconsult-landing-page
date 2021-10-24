@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import SectionStyles from "../../../styles/section";
-import StyledCard from "../../ReviewCard";
+import React from 'react';
+import styled from 'styled-components';
+import SectionStyles from '../../../styles/section';
+import StyledCard from '../../ReviewCard';
 const Section = styled(SectionStyles)`
   display: block;
   h2 {
@@ -88,18 +88,16 @@ const StyledReviewsWrapper = styled.div`
   }
 `;
 const ReviewsSection: React.FC<{ data: any }> = ({ data }) => {
-  const reviews = data.nodes.sort(
-    (a: { order: number }, b: { order: number }) => a.order - b.order
-  );
+  const reviews = data.nodes.sort((a: { order: number }, b: { order: number }) => a.order - b.order);
   reviews.forEach((ele: any, index: any) => (reviews[index].order = index));
   return (
     <Section>
       <h2>What our customers say</h2>
       <StyledReviewsWrapper>
-        <StyledCard color="#DE767B" data={reviews[0]} />
-        <StyledCard color="#4666F6" data={reviews[1]} />
-        <StyledCard color="#090031" data={reviews[2]} />
-        <StyledCard color="#FFCA29" data={reviews[3]} />
+        <StyledCard color='#DE767B' data={reviews[0]} />
+        <StyledCard color='#4666F6' data={reviews[1]} />
+        <StyledCard color='#090031' data={reviews[2]} />
+        <StyledCard color='#FFCA29' data={reviews[3]} />
       </StyledReviewsWrapper>
     </Section>
   );

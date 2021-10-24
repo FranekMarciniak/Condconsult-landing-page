@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Graphic from "../images/graphic.svg";
-import Button from "../styles/button";
+import React from 'react';
+import styled from 'styled-components';
+import Graphic from '../images/graphic.svg';
+import Button from '../styles/button';
 const StyledFormSection = styled.section`
   width: 100%;
   display: flex;
@@ -30,7 +30,7 @@ const StyledFormContainer = styled.div`
   justify-content: center;
   legend {
     line-height: 100%;
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 60px;
     padding: 0;
   }
@@ -67,7 +67,7 @@ const StyledFormContainer = styled.div`
 `;
 export const StyledInput = styled.input`
   background-color: transparent;
-  font-family: Montserrat, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Montserrat, 'Open Sans', 'Helvetica Neue', sans-serif;
   border: none;
   border-bottom: 1px rgba(255, 255, 255, 0.8) solid;
   height: 60px;
@@ -81,7 +81,7 @@ export const StyledInput = styled.input`
 `;
 const StyledTextarea = styled.textarea`
   background-color: transparent;
-  font-family: Montserrat, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Montserrat, 'Open Sans', 'Helvetica Neue', sans-serif;
   border: none;
   border-bottom: 1px rgba(255, 255, 255, 0.8) solid;
   height: 100px;
@@ -127,26 +127,20 @@ const FormSection: React.FC = () => {
       <StyledGraphicContainer></StyledGraphicContainer>
       <StyledFormContainer>
         <fieldset>
-          <legend align="center">Contact Us</legend>
+          <legend align='center'>Contact Us</legend>
           <p>We want to hear from you</p>
           <StyledFormColumn>
-            <SmallInput placeholder="Name" style={{ marginRight: "1%" }} />
-            <SmallInput
-              placeholder="Phone Number"
-              style={{ marginLeft: "1%" }}
-            />
+            <SmallInput placeholder='Name' style={{ marginRight: '1%' }} />
+            <SmallInput placeholder='Phone Number' style={{ marginLeft: '1%' }} />
           </StyledFormColumn>
           <StyledFormColumnMobile>
-            <BigInput
-              placeholder="Phone Number"
-              style={{ marginRight: "10px" }}
-            />
+            <BigInput placeholder='Phone Number' style={{ marginRight: '10px' }} />
           </StyledFormColumnMobile>
           <StyledFormColumn>
-            <BigInput placeholder="Email" style={{ marginRight: "10px" }} />
+            <BigInput placeholder='Email' style={{ marginRight: '10px' }} />
           </StyledFormColumn>
           <StyledFormColumn>
-            <StyledTextarea placeholder="Your message" />
+            <StyledTextarea placeholder='Your message' />
           </StyledFormColumn>
           <StyledFormColumn>
             <Button>Submit</Button>

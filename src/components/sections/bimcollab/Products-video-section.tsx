@@ -1,11 +1,11 @@
-import Img from "gatsby-image";
-import React, { useState } from "react";
-import ReactPlayer from "react-player/dailymotion";
-import styled from "styled-components";
-import play from "../../../assets/svg/play.svg";
-import arrow from "../../../assets/svg/right-arrow-blue.svg";
-import SectionStyles from "../../../styles/section";
-import Button from "../../ButtonCard";
+import Img from 'gatsby-image';
+import React, { useState } from 'react';
+import ReactPlayer from 'react-player/dailymotion';
+import styled from 'styled-components';
+import play from '../../../assets/svg/play.svg';
+import arrow from '../../../assets/svg/right-arrow-blue.svg';
+import SectionStyles from '../../../styles/section';
+import Button from '../../ButtonCard';
 
 const StyledSection = styled(SectionStyles)`
   align-items: initial;
@@ -41,13 +41,13 @@ const StyledTextContainer = styled.div`
   }
   a {
     font-size: 24px;
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
-    color: #3a57ff;
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--link);
     line-height: 25px;
     position: relative;
   }
   a:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -55,7 +55,7 @@ const StyledTextContainer = styled.div`
     height: 100%;
   }
   a:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 30px;
     height: 16px;
@@ -202,7 +202,7 @@ const StyledTransparentOverlay = styled.div<{ active: boolean }>`
   margin: auto;
   position: absolute;
   right: 0;
-  ${(props) => (props.active ? "z-index: 10;" : "z-index: 11;")}
+  ${props => (props.active ? 'z-index: 10;' : 'z-index: 11;')}
 `;
 const StyledVideoContainer = styled.div`
   width: 81.5%;
@@ -265,9 +265,7 @@ const SingleLogoContainer = styled.div`
   }
 `;
 const VideoSection: React.FC<{ data: any }> = ({ data }) => {
-  const options = data.nodes.sort(
-    (a: { order: number }, b: { order: number }) => a.order - b.order
-  );
+  const options = data.nodes.sort((a: { order: number }, b: { order: number }) => a.order - b.order);
   options.forEach((ele: any, index: number) => (options[index].order = index));
   const [sectionState, setSectionState] = useState(0);
   const [playingState, setPlayingState] = useState(false);
@@ -290,13 +288,7 @@ const VideoSection: React.FC<{ data: any }> = ({ data }) => {
       </StyledTextContainer>
       <StyledButtonsContainer>
         {options.map((ele: any, i: number) => (
-          <Button
-            text={ele.product}
-            section={ele.order}
-            currentSection={sectionState}
-            setSection={setSectionState}
-            key={i}
-          />
+          <Button text={ele.product} section={ele.order} currentSection={sectionState} setSection={setSectionState} key={i} />
         ))}
       </StyledButtonsContainer>
       <StyledVideoContainer key={options[sectionState].video}>
@@ -304,22 +296,15 @@ const VideoSection: React.FC<{ data: any }> = ({ data }) => {
           url={options[sectionState].video}
           playing={playingState}
           controls={false}
-          width="100%"
-          height="100%"
+          width='100%'
+          height='100%'
           key={options[sectionState].video}
         />
         <StyledTransparentOverlay active={true} />
         {!playingState ? (
-          <StyledVideoButton
-            onClick={() => setPlayingState(true)}
-            key={options[sectionState].video}
-          />
+          <StyledVideoButton onClick={() => setPlayingState(true)} key={options[sectionState].video} />
         ) : (
-          <StyledTransparentOverlay
-            onClick={() => setPlayingState(false)}
-            key={options[sectionState].video}
-            active={false}
-          />
+          <StyledTransparentOverlay onClick={() => setPlayingState(false)} key={options[sectionState].video} active={false} />
         )}
       </StyledVideoContainer>
     </StyledSection>

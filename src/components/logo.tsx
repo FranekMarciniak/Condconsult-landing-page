@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { graphql, Link, useStaticQuery } from "gatsby";
-import { FC } from "react";
-import Img from "gatsby-image";
+import React from 'react';
+import styled from 'styled-components';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import { FC } from 'react';
+import Img from 'gatsby-image';
 const StyledLogo = styled(Link)`
   max-width: 240px;
   height: 100%;
@@ -47,14 +47,10 @@ const Logo: FC<{ theme: string }> = ({ theme }) => {
     }
   `);
   return (
-    <StyledLogo to="/">
+    <StyledLogo to='/'>
       <Img
-        fluid={
-          theme !== "#030235"
-            ? data.allFile.edges[0].node.childImageSharp.fluid
-            : data.allFile.edges[1].node.childImageSharp.fluid
-        }
-        alt="logo"
+        fluid={theme !== '#030235' ? data.allFile.edges[0].node.childImageSharp.fluid : data.allFile.edges[1].node.childImageSharp.fluid}
+        alt='logo'
       ></Img>
     </StyledLogo>
   );

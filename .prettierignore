@@ -1,4 +1,12 @@
 .cache
 package.json
 package-lock.json
+**/public
 public
+**/node_modules
+**/dist
+**/package.json
+**/yarn.lock
+**/package-lock.json
+**/.eslintrc.js
+**/tsconfig.json

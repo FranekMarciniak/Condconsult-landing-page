@@ -1,9 +1,9 @@
-import * as React from "react";
-import styled from "styled-components";
-import Checkmark from "../../../assets/svg/Checkmark-circle.svg";
-import TempButton from "../../../styles/button";
-import SectionStyles from "../../../styles/section";
-import { StyledInput as Input } from "../../FormSection";
+import * as React from 'react';
+import styled from 'styled-components';
+import Checkmark from '../../../assets/svg/Checkmark-circle.svg';
+import TempButton from '../../../styles/button';
+import SectionStyles from '../../../styles/section';
+import { StyledInput as Input } from '../../FormSection';
 
 const Section = styled(SectionStyles)`
   display: block;
@@ -70,7 +70,7 @@ const StyledTextCard = styled(StyledCard)`
     }
     h4 {
       font-size: 18px;
-      font-family: Montserrat, "Open Sans", "Helvetica Neue", sans-serif;
+      font-family: Montserrat, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-weight: 400;
     }
   }
@@ -137,7 +137,7 @@ const StyledMobilePrice = styled.span`
   @media (max-width: 900px) {
     font-size: 45px;
     font-weight: 600;
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 `;
 const PricingSection: React.FC = () => {
@@ -164,20 +164,20 @@ const PricingSection: React.FC = () => {
               <p>Enterprise licesing available</p>
             </StyledLi>
             <StyledLi>
-              <p>BYOD of buy hardware</p>{" "}
+              <p>BYOD of buy hardware</p>{' '}
             </StyledLi>
           </ul>
         </StyledTextCard>
         <StyledFormCard>
           <fieldset>
-            <legend align="left">Hardware Pricing</legend>
+            <legend align='left'>Hardware Pricing</legend>
             <h5>Contact us by using the form bellow.</h5>
-            <StyledInput placeholder="First & Last Name" />
-            <StyledInput placeholder="Email" />
-            <StyledInput placeholder="Phone number" />
-            <StyledInput placeholder="Company" />
-            <StyledInput placeholder="Job role" />
-            <StyledInput placeholder="Country" />
+            <StyledInput placeholder='First & Last Name' />
+            <StyledInput placeholder='Email' />
+            <StyledInput placeholder='Phone number' />
+            <StyledInput placeholder='Company' />
+            <StyledInput placeholder='Job role' />
+            <StyledInput placeholder='Country' />
             <Button>Send</Button>
           </fieldset>
         </StyledFormCard>

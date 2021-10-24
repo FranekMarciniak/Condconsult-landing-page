@@ -1,9 +1,9 @@
-import { createGlobalStyle } from "styled-components";
-import montserrat from "../assets/fonts/Montserrat-Regular.ttf";
-import poppinsLight from "../assets/fonts/Poppins-Light.ttf";
-import poppinsMedium from "../assets/fonts/Poppins-Medium.ttf";
-import poppinsRegular from "../assets/fonts/Poppins-Regular.ttf";
-import poppinsHeading from "../assets/fonts/Poppins-SemiBold.ttf";
+import { createGlobalStyle } from 'styled-components';
+import montserrat from '../assets/fonts/Montserrat-Regular.ttf';
+import poppinsLight from '../assets/fonts/Poppins-Light.ttf';
+import poppinsMedium from '../assets/fonts/Poppins-Medium.ttf';
+import poppinsRegular from '../assets/fonts/Poppins-Regular.ttf';
+import poppinsHeading from '../assets/fonts/Poppins-SemiBold.ttf';
 
 const Typography = createGlobalStyle`
 

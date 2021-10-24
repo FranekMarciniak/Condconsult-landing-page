@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Button = styled.button`
-  font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   height: 40px;
   border-radius: 25px;

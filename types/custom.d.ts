@@ -1,12 +1,12 @@
-declare module "*.svg" {
+declare module '*.svg' {
   const content: any;
   export default content;
 }
-declare module "*.png" {
+declare module '*.png' {
   const content: any;
   export default content;
 }
-declare module "*.ttf" {
+declare module '*.ttf' {
   const content: any;
   export default content;
 }

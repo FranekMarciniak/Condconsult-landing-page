@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Button from "../../../styles/button";
-import { graphql, Link, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
-import SectionStyles from "../../../styles/section";
+import React from 'react';
+import styled from 'styled-components';
+import Button from '../../../styles/button';
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
+import SectionStyles from '../../../styles/section';
 const StyledSection = styled(SectionStyles)`
   @media (max-width: 900px) {
     flex-direction: column-reverse;
@@ -135,7 +135,7 @@ const ConsultantSection: React.FC<{ data: any }> = ({ data }) => {
         </StyledIntroButton>
       </StyledTextWrapper>
       <StyledPhotoWrapper>
-        <Img fluid={img.file.childImageSharp.fluid} alt="meeting drawing" />
+        <Img fluid={img.file.childImageSharp.fluid} alt='meeting drawing' />
       </StyledPhotoWrapper>
       <StyledMobileHeading>
         <h2>{data.heading}</h2>

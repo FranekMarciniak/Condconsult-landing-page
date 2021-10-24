@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import exit from "../assets/svg/exit.svg";
-import RightNav from "./RightNav";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import exit from '../assets/svg/exit.svg';
+import RightNav from './RightNav';
 
 const StyledBurger = styled.div<{ open: boolean }>`
   width: 30px;
@@ -13,15 +13,14 @@ const StyledBurger = styled.div<{ open: boolean }>`
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
-  cursor: ${({ open }) => (open ? "default" : "pointer")};
-  z-index: ${({ open }) => (open ? "-1" : "3")};
+  cursor: ${({ open }) => (open ? 'default' : 'pointer')};
+  z-index: ${({ open }) => (open ? '-1' : '3')};
   div {
     width: 2rem;
     height: 0.25rem;
     border-radius: 10px;
-    background-color: ${(props) =>
-      props.color !== "#030235" ? "var(--font-primary)" : "#fff"};
-    display: ${({ open }) => (open ? "none" : "block")};
+    background-color: ${props => (props.color !== '#030235' ? 'var(--font-primary)' : '#fff')};
+    display: ${({ open }) => (open ? 'none' : 'block')};
   }
   @media (min-width: 1101px) {
     display: none;

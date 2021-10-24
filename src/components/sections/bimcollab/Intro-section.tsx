@@ -1,13 +1,13 @@
-import React, { useContext, useEffect } from "react";
-import styled from "styled-components";
-import { ThemeContext } from "../../../context/todoContext/contextState";
-import bimcollab from "../../../images/BIMCollab-intro.png";
-import Button from "../../../styles/button";
-import SectionStyles from "../../../styles/section";
+import React, { useContext, useEffect } from 'react';
+import styled from 'styled-components';
+import { ThemeContext } from '../../../context/todoContext/contextState';
+import bimcollab from '../../../images/BIMCollab-intro.png';
+import Button from '../../../styles/button';
+import SectionStyles from '../../../styles/section';
 
 const Section = styled(SectionStyles)`
   width: 100%;
-  background-color: #ebecfb;
+  background-color: var(--gray);
   padding: 100px 0px;
   margin-top: 0;
   @media (max-width: 900px) {
@@ -22,7 +22,7 @@ const StyledSectionWrapper = styled.div`
   h1 {
     line-height: 131%;
     text-align: left;
-    color: #030235;
+    color: var(--font-primary);
     max-width: 1000px;
   }
 
@@ -85,7 +85,7 @@ const StyledIntroButton = styled(Button)`
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   @media (max-width: 900px) {
     margin-left: auto;
@@ -103,10 +103,7 @@ const Intro: React.FC = () => {
         <h1>There`s a better way to manage your BIM issues</h1>
         <StyledContentWrapper>
           <StyledTextWrapper>
-            <p>
-              Save time and create better BIM models with professional issue
-              management and integrated model validaion.
-            </p>
+            <p>Save time and create better BIM models with professional issue management and integrated model validaion.</p>
             <StyledIntroButton>Try it now!</StyledIntroButton>
           </StyledTextWrapper>
           <StyledImageWrapper>

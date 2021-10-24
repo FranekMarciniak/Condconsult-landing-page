@@ -1,16 +1,16 @@
-import { graphql } from "gatsby";
-import * as React from "react";
-import Layout from "../components/layout";
-import Logos from "../components/sections/universal/Cooperate-section";
-import Reviews from "../components/sections/universal/Reviews-section";
-import About from "../components/sections/vgis/About-section";
-import Information from "../components/sections/vgis/Information-section";
-import Intro from "../components/sections/vgis/Intro-section";
-import OtherProducts from "../components/sections/vgis/OtherProducts-section";
-import Pricing from "../components/sections/vgis/Pricing-section";
-import Products from "../components/sections/vgis/Products-photo-section";
-import Video from "../components/sections/vgis/Video-section";
-import SEO from "../components/seo";
+import { graphql } from 'gatsby';
+import * as React from 'react';
+import Layout from '../components/layout';
+import Logos from '../components/sections/universal/Cooperate-section';
+import Reviews from '../components/sections/universal/Reviews-section';
+import About from '../components/sections/vgis/About-section';
+import Information from '../components/sections/vgis/Information-section';
+import Intro from '../components/sections/vgis/Intro-section';
+import OtherProducts from '../components/sections/vgis/OtherProducts-section';
+import Pricing from '../components/sections/vgis/Pricing-section';
+import Products from '../components/sections/vgis/Products-photo-section';
+import Video from '../components/sections/vgis/Video-section';
+import SEO from '../components/seo';
 const vgisPage: React.FC = ({ data }: any): React.ReactElement => {
   const cooperate = data.allSanityCooperation.nodes[0];
   const showcase = data.allSanityVgisShowcase;
@@ -20,13 +20,13 @@ const vgisPage: React.FC = ({ data }: any): React.ReactElement => {
   console.log(data.allSanityIntro.edges[0].node);
   return (
     <Layout>
-      <SEO title="Condconsult" />
+      <SEO title='Condconsult' />
       <Intro data={intro} />
       <Logos data={cooperate} />
       <About data={about} />
-      <Information color="#ffca29" />
+      <Information color='#ffca29' />
       <Products data={showcase} />
-      <Information color="#4666F6" />
+      <Information color='#4666F6' />
       <Video />
       <Reviews data={reviews} />
       <Pricing />

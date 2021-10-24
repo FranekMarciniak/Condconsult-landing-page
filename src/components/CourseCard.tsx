@@ -1,13 +1,13 @@
-import { Link } from "gatsby";
-import Img from "gatsby-image";
-import React from "react";
-import styled from "styled-components";
-import arrow2D54BC from "../assets/svg/right-arrow-#2D54BC.svg";
-import arrow3A57FF from "../assets/svg/right-arrow-#3A57FF.svg";
-import arrowFFCA29 from "../assets/svg/right-arrow-#FFCA29.svg";
-import whiteArrow from "../assets/svg/right-arrow-white.svg";
-import Button from "../styles/button";
-import colorChanger from "../utils/colorChanger";
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
+import React from 'react';
+import styled from 'styled-components';
+import arrow2D54BC from '../assets/svg/right-arrow-#2D54BC.svg';
+import arrow3A57FF from '../assets/svg/right-arrow-#3A57FF.svg';
+import arrowFFCA29 from '../assets/svg/right-arrow-#FFCA29.svg';
+import whiteArrow from '../assets/svg/right-arrow-white.svg';
+import Button from '../styles/button';
+import colorChanger from '../utils/colorChanger';
 const StyledBox = styled.div`
   height: 486px;
   padding: 45px 40px;
@@ -16,13 +16,12 @@ const StyledBox = styled.div`
   justify-content: flex-start;
   a {
     font-size: 24px;
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
-    color: #3a57ff;
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 25px;
     position: relative;
   }
   a:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -30,7 +29,7 @@ const StyledBox = styled.div`
     height: 100%;
   }
   a:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 30px;
     height: 16px;
@@ -38,8 +37,7 @@ const StyledBox = styled.div`
     right: -40px;
     z-index: 15;
     margin-left: 10px;
-    ${(props: { arrow?: any }) =>
-      props.arrow ? `background-image: url(${props.arrow});` : ``}
+    ${(props: { arrow?: any }) => (props.arrow ? `background-image: url(${props.arrow});` : ``)}
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -136,9 +134,9 @@ const StyledIntroButton = styled(Button)`
   display: flex;
   line-height: 25px;
   align-items: center;
-  font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 22px;
     height: 13px;
@@ -159,11 +157,11 @@ const StyledIntroButton = styled(Button)`
 
 const arrowPicker = (color: string) => {
   switch (color) {
-    case "#FFCA29":
+    case '#FFCA29':
       return arrowFFCA29;
-    case "#2D54BC":
+    case '#2D54BC':
       return arrow2D54BC;
-    case "#3A57FF":
+    case '#3A57FF':
       return arrow3A57FF;
     default:
       return whiteArrow;
@@ -186,13 +184,10 @@ const CourseCard: React.FC<Card> = ({ color, content, size, data }) => {
     );
   }
   return (
-    <StyledBox
-      style={{ width: size, backgroundColor: color }}
-      arrow={arrowPicker(colorChanger(color))}
-    >
+    <StyledBox style={{ width: size, backgroundColor: color }} arrow={arrowPicker(colorChanger(color))}>
       <h3>{data.heading}</h3>
       <Link
-        to="/d"
+        to='/d'
         style={{
           color: colorChanger(color),
         }}

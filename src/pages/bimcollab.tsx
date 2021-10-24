@@ -1,14 +1,14 @@
-import { graphql } from "gatsby";
-import * as React from "react";
-import Layout from "../components/layout";
-import About from "../components/sections/bimcollab/About-section";
-import Intro from "../components/sections/bimcollab/Intro-section";
-import OtherProducts from "../components/sections/bimcollab/OtherProducts-section";
-import Pricing from "../components/sections/bimcollab/Pricing-section";
-import Products from "../components/sections/bimcollab/Products-video-section";
-import Logos from "../components/sections/universal/Cooperate-section";
-import Reviews from "../components/sections/universal/Reviews-section";
-import SEO from "../components/seo";
+import { graphql } from 'gatsby';
+import * as React from 'react';
+import Layout from '../components/layout';
+import About from '../components/sections/bimcollab/About-section';
+import Intro from '../components/sections/bimcollab/Intro-section';
+import OtherProducts from '../components/sections/bimcollab/OtherProducts-section';
+import Pricing from '../components/sections/bimcollab/Pricing-section';
+import Products from '../components/sections/bimcollab/Products-video-section';
+import Logos from '../components/sections/universal/Cooperate-section';
+import Reviews from '../components/sections/universal/Reviews-section';
+import SEO from '../components/seo';
 
 const bimCollabPage: React.FC = ({ data }: any): React.ReactElement => {
   const cooperate = data.allSanityCooperation.nodes[0];
@@ -18,18 +18,18 @@ const bimCollabPage: React.FC = ({ data }: any): React.ReactElement => {
 
   return (
     <Layout>
-      <SEO title="Condconsult" />
+      <SEO title='Condconsult' />
       <Intro />
       <Logos data={cooperate} />
       <About data={about} />
       <Products data={showcase} />
       <Pricing
         data={{
-          button: "Link",
+          button: 'Link',
           content:
-            "BIMcollab offers a wide range of prices to cover all your need. Click on the link bellow and see wich if them iis right for you.",
-          heading: "Choose a plan that`s right for you",
-          link: "/d",
+            'BIMcollab offers a wide range of prices to cover all your need. Click on the link bellow and see wich if them iis right for you.',
+          heading: 'Choose a plan that`s right for you',
+          link: '/d',
         }}
       />
       <Reviews data={reviews} />

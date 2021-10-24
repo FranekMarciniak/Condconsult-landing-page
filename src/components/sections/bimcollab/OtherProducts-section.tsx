@@ -1,9 +1,9 @@
-import { Link } from "gatsby";
-import React from "react";
-import styled from "styled-components";
-import arrow from "../../../assets/svg/right-arrow-blue.svg";
-import vGis from "../../../images/vgis-wide.png";
-import SectionStyles from "../../../styles/section";
+import { Link } from 'gatsby';
+import React from 'react';
+import styled from 'styled-components';
+import arrow from '../../../assets/svg/right-arrow-blue.svg';
+import vGis from '../../../images/vgis-wide.png';
+import SectionStyles from '../../../styles/section';
 
 const Section = styled(SectionStyles)`
   flex-direction: column;
@@ -32,8 +32,8 @@ const Section = styled(SectionStyles)`
 
   a {
     font-size: 24px;
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
-    color: #3a57ff;
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--link);
     margin: 25px auto;
     line-height: 25px;
     position: relative;
@@ -41,7 +41,7 @@ const Section = styled(SectionStyles)`
   }
 
   a:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 30px;
     height: 16px;
@@ -83,21 +83,18 @@ const OtherProducts: React.FC = () => {
     <Section>
       <h2>See other products</h2>
       <p>
-        The right tools are important. Condconsult negotiates software solutions
-        that support quality and collaboration across disciplines and phases in
-        construction
+        The right tools are important. Condconsult negotiates software solutions that support quality and collaboration across disciplines
+        and phases in construction
       </p>
       <StyledImageWrapper>
         <img src={vGis}></img>
       </StyledImageWrapper>
       <h3>vGis</h3>
-      <p style={{ color: "#9b99ae" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus magna
-        non in morbi vel urna elit suspendisse massa. Nunc elementum eleifend
-        amet nulla condimentum feugiat gravida nulla sed. Sed vestibulum dolor,
-        at habitant odio eget.
+      <p style={{ color: 'var(--font-tertiary)' }}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus magna non in morbi vel urna elit suspendisse massa. Nunc elementum
+        eleifend amet nulla condimentum feugiat gravida nulla sed. Sed vestibulum dolor, at habitant odio eget.
       </p>
-      <Link to="/">Learn more about vGis</Link>
+      <Link to='/'>Learn more about vGis</Link>
     </Section>
   );
 };

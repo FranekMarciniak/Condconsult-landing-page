@@ -1,10 +1,10 @@
-import { Link } from "gatsby";
-import React, { FC } from "react";
-import styled from "styled-components";
-import arrowDark from "../assets/svg/small-arrow-dark.svg";
-import arrowWhite from "../assets/svg/small-arrow-white.svg";
-import Button from "../styles/button";
-import Hamburger from "./Burger";
+import { Link } from 'gatsby';
+import React, { FC } from 'react';
+import styled from 'styled-components';
+import arrowDark from '../assets/svg/small-arrow-dark.svg';
+import arrowWhite from '../assets/svg/small-arrow-white.svg';
+import Button from '../styles/button';
+import Hamburger from './Burger';
 const StyledNav = styled.nav`
   width: 83.5%;
   display: flex;
@@ -35,8 +35,7 @@ const StyledUl = styled.ul`
     justify-content: center;
     background-color: transparent;
     a {
-      color: ${(props) =>
-        props.color !== "#030235" ? "var(--font-primary)" : "#fff"};
+      color: ${props => (props.color !== '#030235' ? 'var(--font-primary)' : '#fff')};
     }
     @media (max-width: 1660px) {
       font-size: 17px;
@@ -94,14 +93,13 @@ const StyledLiButton = styled.button`
   text-align: left;
   outline: none;
   padding: 0 10px;
-  color: ${(props) =>
-    props.color !== "#030235" ? "var(--font-primary)" : "#fff"};
-  font-family: poppins-regular, "Open Sans", "Helvetica Neue", sans-serif;
+  color: ${props => (props.color !== '#030235' ? 'var(--font-primary)' : '#fff')};
+  font-family: poppins-regular, 'Open Sans', 'Helvetica Neue', sans-serif;
   &:focus {
     padding: 0 10px;
   }
   &:before {
-    content: "";
+    content: '';
     width: 100%;
     height: 20px;
     position: absolute;
@@ -109,11 +107,8 @@ const StyledLiButton = styled.button`
     top: 15px;
   }
   &:after {
-    content: "";
-    ${(props) =>
-      props.color !== "#030235"
-        ? `background-image: url(${arrowDark});`
-        : `background-image:  url(${arrowWhite});`}
+    content: '';
+    ${props => (props.color !== '#030235' ? `background-image: url(${arrowDark});` : `background-image:  url(${arrowWhite});`)}
     background-repeat: no-repeat;
     width: 10px;
     height: 30px;
@@ -147,30 +142,20 @@ const Nav: FC<{ theme: string }> = ({ theme }) => {
               Products
               <StyledDropdownContent>
                 {/* <Link to="/plannerly">Plannerly</Link> */}
-                <Link to="/vgis">vGIS</Link>
-                <Link to="/bimcollab">BIMCollab</Link>
+                <Link to='/vgis'>vGIS</Link>
+                <Link to='/bimcollab'>BIMCollab</Link>
               </StyledDropdownContent>
             </StyledLiButton>
           </li>
           <li>
-            <StyledLiButton color={theme}>
-              Courses
-              <StyledDropdownContent>
-                <Link to="/course-1">Course 1</Link>
-                <Link to="course-2">Course 2</Link>
-                <Link to="course-3">Course 3</Link>
-              </StyledDropdownContent>
-            </StyledLiButton>
+            <Link to='/consultation'>Consultation</Link>
           </li>
           <li>
-            <Link to="/consultation">Consultation</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
+            <Link to='/about'>About</Link>
           </li>
         </StyledUl>
         <StyledCSWrapper>
-          <Button style={{ marginBottom: "5px" }}>Contact</Button>
+          <Button style={{ marginBottom: '5px' }}>Contact</Button>
         </StyledCSWrapper>
         <Hamburger color={theme} />
       </StyledNav>

@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Button from "../../../styles/button";
-import SectionStyles from "../../../styles/section";
+import React from 'react';
+import styled from 'styled-components';
+import Button from '../../../styles/button';
+import SectionStyles from '../../../styles/section';
 
 const Section = styled(SectionStyles)`
   background-color: var(--font-primary);
@@ -20,16 +20,16 @@ const Section = styled(SectionStyles)`
   }
   a {
     font-size: 24px;
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: auto;
     margin-right: auto;
     align-self: center;
-    color: #3a57ff;
+    color: var(--link);
     line-height: 25px;
     position: relative;
   }
   a:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -110,7 +110,7 @@ const StyledIntroButton = styled(Button)<{ to: string }>`
   display: flex;
   align-items: center;
   /* justify-content: center; */
-  font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
 
   @media (max-width: 900px) {
     margin-left: auto;
@@ -141,9 +141,7 @@ const About: React.FC<{ data: any }> = ({ data }) => {
       </HeadingWrapper>
       <ContentWrapper>
         <p>{data.content}</p>
-        <StyledIntroButton to={data.link}>
-          {"See BIMcollab price plans"}
-        </StyledIntroButton>
+        <StyledIntroButton to={data.link}>{'See BIMcollab price plans'}</StyledIntroButton>
       </ContentWrapper>
     </Section>
   );

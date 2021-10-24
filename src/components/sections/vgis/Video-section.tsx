@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import ReactPlayer from "react-player/dailymotion";
-import styled from "styled-components";
-import play from "../../../assets/svg/play.svg";
-import SectionStyles from "../../../styles/section";
+import React, { useState } from 'react';
+import ReactPlayer from 'react-player/dailymotion';
+import styled from 'styled-components';
+import play from '../../../assets/svg/play.svg';
+import SectionStyles from '../../../styles/section';
 
 const Section = styled(SectionStyles)`
   display: block;
@@ -78,7 +78,7 @@ const StyledTransparentOverlay = styled.div<{ active: boolean }>`
   margin: auto;
   position: absolute;
   right: 0;
-  ${(props) => (props.active ? "z-index: 10;" : "z-index: 11;")}
+  ${props => (props.active ? 'z-index: 10;' : 'z-index: 11;')}
 `;
 const StyledVideoContainer = styled.div`
   width: 81.5%;
@@ -100,32 +100,19 @@ const VideoSection: React.FC = () => {
   return (
     <Section>
       <StyledTextContainer>
-        <h2>
-          High - accuracy augmented reality for BIM, GIS and Reality Capture
-        </h2>
+        <h2>High - accuracy augmented reality for BIM, GIS and Reality Capture</h2>
         <p>
-          vGIS aggregates data from a variety of sources, including Autodesk
-          models, Bentley BIM designs, and Esri ArcGIS, to display it in a
-          unified, real-time augmented reality and mixed-reality (MR) view with
-          centimeter-level positioning accuracy.
+          vGIS aggregates data from a variety of sources, including Autodesk models, Bentley BIM designs, and Esri ArcGIS, to display it in
+          a unified, real-time augmented reality and mixed-reality (MR) view with centimeter-level positioning accuracy.
         </p>
       </StyledTextContainer>
       <StyledVideoContainer>
-        <StyledVideo
-          url="https://www.dailymotion.com/video/x7zcrmc"
-          playing={playingState}
-          controls={false}
-          width="100%"
-          height="100%"
-        />
+        <StyledVideo url='https://www.dailymotion.com/video/x7zcrmc' playing={playingState} controls={false} width='100%' height='100%' />
         <StyledTransparentOverlay active={true} />
         {!playingState ? (
           <StyledVideoButton onClick={() => setPlayingState(true)} />
         ) : (
-          <StyledTransparentOverlay
-            onClick={() => setPlayingState(false)}
-            active={false}
-          />
+          <StyledTransparentOverlay onClick={() => setPlayingState(false)} active={false} />
         )}
       </StyledVideoContainer>
     </Section>

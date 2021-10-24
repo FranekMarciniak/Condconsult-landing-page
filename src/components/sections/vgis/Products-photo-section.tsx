@@ -1,10 +1,10 @@
-import { Link } from "gatsby";
-import Img from "gatsby-image";
-import React, { useState } from "react";
-import styled from "styled-components";
-import arrow from "../../../assets/svg/right-arrow-blue.svg";
-import SectionStyles from "../../../styles/section";
-import Button from "../../ButtonCard";
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import arrow from '../../../assets/svg/right-arrow-blue.svg';
+import SectionStyles from '../../../styles/section';
+import Button from '../../ButtonCard';
 
 const Section = styled(SectionStyles)`
   width: 75%;
@@ -57,13 +57,13 @@ const StyledTextContainer = styled.div`
   }
   a {
     font-size: 24px;
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #3a57ff;
     line-height: 25px;
     position: relative;
   }
   a:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -71,7 +71,7 @@ const StyledTextContainer = styled.div`
     height: 100%;
   }
   a:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 30px;
     height: 16px;
@@ -201,9 +201,7 @@ const StyledImageWrapper = styled.div`
 `;
 
 const VideoSection = ({ data }: any) => {
-  const options = data.nodes.sort(
-    (a: { order: number }, b: { order: number }) => a.order - b.order
-  );
+  const options = data.nodes.sort((a: { order: number }, b: { order: number }) => a.order - b.order);
   options.forEach((ele: any, index: number) => (options[index].order = index));
   const [sectionState, setSectionState] = useState(0);
   return (
@@ -213,19 +211,11 @@ const VideoSection = ({ data }: any) => {
           <h3>{options[sectionState].heading}</h3>
           <p>{options[sectionState].content}</p>
           <p>{options[sectionState].secondContent}</p>
-          <Link to={options[sectionState].link}>
-            {options[sectionState].button}
-          </Link>
+          <Link to={options[sectionState].link}>{options[sectionState].button}</Link>
         </StyledTextContainer>
         <StyledButtonsContainer>
           {options.map((ele: { product: string; order: number }, i: number) => (
-            <Button
-              text={ele.product}
-              section={ele.order}
-              currentSection={sectionState}
-              setSection={setSectionState}
-              key={i}
-            />
+            <Button text={ele.product} section={ele.order} currentSection={sectionState} setSection={setSectionState} key={i} />
           ))}
         </StyledButtonsContainer>
         <StyledVideoContainer key={options[sectionState].video}>

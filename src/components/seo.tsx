@@ -1,6 +1,6 @@
-import { graphql, useStaticQuery } from "gatsby";
-import React from "react";
-import { Helmet } from "react-helmet";
+import { graphql, useStaticQuery } from 'gatsby';
+import React from 'react';
+import { Helmet } from 'react-helmet';
 interface metaTag {
   name: string;
   content: string;
@@ -11,12 +11,7 @@ interface SEOProps {
   meta?: metaTag[];
   title?: string;
 }
-const SEO: React.FC<SEOProps> = ({
-  description = "",
-  lang = "en",
-  meta = [],
-  title = "",
-}) => {
+const SEO: React.FC<SEOProps> = ({ description = '', lang = 'en', meta = [], title = '' }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -27,7 +22,7 @@ const SEO: React.FC<SEOProps> = ({
           }
         }
       }
-    `
+    `,
   );
 
   const metaDescription = description || site.siteMetadata.description;

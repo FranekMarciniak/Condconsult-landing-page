@@ -1,11 +1,11 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import "reset-css";
-import GlobalStyles from "../styles/GlobalStyles";
-import Typography from "../styles/Typography";
-import Footer from "./sections/universal/Footer-section";
-import Header from "./sections/universal/Header-section";
-import ContextState from "../context/todoContext/contextState";
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import 'reset-css';
+import GlobalStyles from '../styles/GlobalStyles';
+import Typography from '../styles/Typography';
+import Footer from './sections/universal/Footer-section';
+import Header from './sections/universal/Header-section';
+import ContextState from '../context/todoContext/contextState';
 
 const Layout: React.FC<any> = ({ children }) => {
   const data = useStaticQuery(graphql`

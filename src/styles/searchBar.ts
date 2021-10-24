@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 const searchBar = styled.input`
   border-radius: 25px;
   width: 200px;

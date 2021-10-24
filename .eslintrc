@@ -9,11 +9,13 @@
 	"extends": [
 		"eslint:recommended",
 		"plugin:@typescript-eslint/eslint-recommended",
-		"plugin:@typescript-eslint/recommended"
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
 	],
 	"rules": {
 		"no-console": 0, // Means warning
-		"prettier/prettier": [  
+		"prettier/prettier": [
+			"error",
 			{
 				"endOfLine": "auto"
 			}

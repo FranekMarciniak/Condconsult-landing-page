@@ -1,5 +1,5 @@
-const dotenv = require("dotenv");
-dotenv.config({ path: ".env" });
+const dotenv = require('dotenv');
+dotenv.config({ path: '.env' });
 
 module.exports = {
   siteMetadata: {
@@ -12,17 +12,17 @@ module.exports = {
     {
       resolve: `gatsby-source-sanity`,
       options: {
-        projectId: "otk1mba7",
-        dataset: "production",
+        projectId: 'otk1mba7',
+        dataset: 'production',
         token: process.env.SECRET_SANITY,
         watchMode: true,
       },
     },
     {
-      resolve: "gatsby-plugin-sanity-image",
+      resolve: 'gatsby-plugin-sanity-image',
       options: {
-        projectId: "otk1mba7",
-        dataset: "production",
+        projectId: 'otk1mba7',
+        dataset: 'production',
       },
     },
     {

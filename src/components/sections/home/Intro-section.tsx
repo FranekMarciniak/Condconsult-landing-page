@@ -1,10 +1,10 @@
-import { Link } from "gatsby";
-import * as React from "react";
-import { useContext, useEffect } from "react";
-import styled from "styled-components";
-import { ThemeContext } from "../../../context/todoContext/contextState";
-import Button from "../../../styles/button";
-import SectionStyles from "../../../styles/section";
+import { Link } from 'gatsby';
+import * as React from 'react';
+import { useContext, useEffect } from 'react';
+import styled from 'styled-components';
+import { ThemeContext } from '../../../context/todoContext/contextState';
+import Button from '../../../styles/button';
+import SectionStyles from '../../../styles/section';
 
 const Section = styled(SectionStyles)`
   flex-flow: wrap column;
@@ -43,7 +43,7 @@ const Intro: React.FC<dataInterface> = ({ data }) => {
     <Section>
       <h1>{data.heading}</h1>
       <P>{data.content}</P>
-      <StyledIntroButton as={Link} to="/a">
+      <StyledIntroButton as={Link} to='/a'>
         {data.button}
       </StyledIntroButton>
     </Section>

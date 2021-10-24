@@ -1,13 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { graphql, Link, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
-import {
-  FaTwitterSquare,
-  FaLinkedin,
-  FaFacebookSquare,
-  FaInstagramSquare,
-} from "react-icons/fa";
+import { graphql, Link, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
+import React from 'react';
+import { FaFacebookSquare, FaInstagramSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
+import styled from 'styled-components';
 
 const FooterWrapper = styled.footer`
   width: 75%;
@@ -87,8 +82,8 @@ const StyledNavCell = styled.div`
   padding-right: 35px;
   p,
   a:first-child {
-    color: #de767b;
-    font-family: poppins-heading, "Open Sans", "Helvetica Neue", sans-serif;
+    color: var(--watermelon-pink);
+    font-family: poppins-heading, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 125%;
@@ -96,7 +91,7 @@ const StyledNavCell = styled.div`
   }
   a {
     padding-bottom: 10px;
-    font-family: poppins-regular, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: poppins-regular, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 18px;
     line-height: 125%;
     color: white;
@@ -162,52 +157,42 @@ const FooterSection: React.FC = () => {
   return (
     <FooterWrapper>
       <StyledNormalWrapper>
-        <StyledLogo to="/">
-          <Img fluid={data.file.childImageSharp.fluid} alt="logo"></Img>
+        <StyledLogo to='/'>
+          <Img fluid={data.file.childImageSharp.fluid} alt='logo'></Img>
         </StyledLogo>
       </StyledNormalWrapper>
       <StyledMobileRow>
-        <StyledLogo to="/">
-          <Img fluid={data.file.childImageSharp.fluid} alt="logo"></Img>
+        <StyledLogo to='/'>
+          <Img fluid={data.file.childImageSharp.fluid} alt='logo'></Img>
         </StyledLogo>
       </StyledMobileRow>
       <StyledFooterNav>
         <StyledNavCell>
           <p>Products</p>
-          <Link to="/d">Planerly</Link>
-          <Link to="/d">vGis</Link>
-          {/* <Link to="/d">BIMcollab</Link> */}
+          <Link to='/d'>Planerly</Link>
+          <Link to='/d'>vGis</Link>
         </StyledNavCell>
         <StyledNavCell>
-          <Link to="/consultation">Consultation</Link>
+          <Link to='/consultation'>Consultation</Link>
         </StyledNavCell>
         <StyledNavCell>
-          <p>Courses</p>
-          <Link to="/d">Course 1</Link>
-          <Link to="/d">Course 2</Link>
-          <Link to="/d">Course 3</Link>
-        </StyledNavCell>
-        <StyledNavCell>
-          <Link to="/about">About</Link>
-        </StyledNavCell>
-        <StyledNavCell>
-          <Link to="/contact">Contact</Link>
+          <Link to='/about'>About</Link>
         </StyledNavCell>
       </StyledFooterNav>
       <StyledNormalWrapper>
         <StyledSocialContainer>
-          <FaLinkedin fill="#ffffff" />
-          <FaFacebookSquare fill="#ffffff" />
-          <FaInstagramSquare fill="#ffffff" />
-          <FaTwitterSquare fill="#ffffff" />
+          <FaLinkedin fill='#ffffff' />
+          <FaFacebookSquare fill='#ffffff' />
+          <FaInstagramSquare fill='#ffffff' />
+          <FaTwitterSquare fill='#ffffff' />
         </StyledSocialContainer>
       </StyledNormalWrapper>
       <StyledMobileRow>
         <StyledSocialContainer>
-          <FaLinkedin fill="#ffffff" />
-          <FaFacebookSquare fill="#ffffff" />
-          <FaInstagramSquare fill="#ffffff" />
-          <FaTwitterSquare fill="#ffffff" />
+          <FaLinkedin fill='#ffffff' />
+          <FaFacebookSquare fill='#ffffff' />
+          <FaInstagramSquare fill='#ffffff' />
+          <FaTwitterSquare fill='#ffffff' />
         </StyledSocialContainer>
       </StyledMobileRow>
       <FooterText>

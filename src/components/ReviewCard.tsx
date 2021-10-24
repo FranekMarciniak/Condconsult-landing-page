@@ -1,7 +1,7 @@
-import Img from "gatsby-image";
-import React from "react";
-import styled from "styled-components";
-import { FC } from "react";
+import Img from 'gatsby-image';
+import React from 'react';
+import styled from 'styled-components';
+import { FC } from 'react';
 const StyledCard = styled.article`
   min-height: 516px;
   padding: 46px;
@@ -138,7 +138,7 @@ const ReviewCard: FC<Props> = ({ color, data }) => {
       </StyledPersonWrapper>
       <StyledTextWrapper>
         <p>{data.content}</p>
-        <StyledHgroup as="hgroup">
+        <StyledHgroup as='hgroup'>
           <h5>{data.name}</h5>
           <h6>{data.workplace}</h6>
         </StyledHgroup>
