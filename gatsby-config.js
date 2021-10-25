@@ -35,6 +35,13 @@ module.exports = {
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
+				name: `home`,
+				path: `${__dirname}/content/home`,
+			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
 				name: `images`,
 				path: `${__dirname}/src/assets/svg`,
 			},
@@ -62,6 +69,19 @@ module.exports = {
 				isTSX: true, // defaults to false
 				jsxPragma: `jsx`, // defaults to "React"
 				allExtensions: true, // defaults to false
+			},
+		},
+		{
+			resolve: `gatsby-plugin-mdx`,
+			options: {
+				gatsbyRemarkPlugins: [
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 1200,
+						},
+					},
+				],
 			},
 		},
 	],
