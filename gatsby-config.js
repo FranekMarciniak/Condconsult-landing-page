@@ -64,5 +64,19 @@ module.exports = {
 				allExtensions: true, // defaults to false
 			},
 		},
+		{
+			resolve: `gatsby-plugin-mdx`,
+			options: {
+				extensions: [".mdx", ".md"],
+				gatsbyRemarkPlugins: [
+					{
+						resolve: `gatsby-remark-images`,
+						options: {
+							maxWidth: 2400,
+						},
+					},
+				],
+			},
+		},
 	],
 };
