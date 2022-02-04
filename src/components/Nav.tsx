@@ -153,14 +153,20 @@ const Nav: FC<{ theme: string }> = ({ theme }) => {
 						</StyledLiButton>
 					</li>
 					<li>
-						<Link to="/consultation">Consultation</Link>
+						<Link to="/vgis">VGis</Link>
 					</li>
 					<li>
-						<Link to="/about">About</Link>
+						<Link to="/bimcollab">BIMCollab</Link>
 					</li>
 				</StyledUl>
 				<StyledCSWrapper>
-					<Button style={{ marginBottom: "5px" }}>Contact</Button>
+					<Button
+						as="a"
+						href="#footer"
+						style={{ marginBottom: "5px", padding: "8px" }}
+					>
+						Contact
+					</Button>
 				</StyledCSWrapper>
 				<Hamburger color={theme} />
 			</StyledNav>

@@ -9,7 +9,7 @@ const StyledFooter = styled.div`
 `;
 const Footer: React.FC = () => {
 	return (
-		<StyledFooter>
+		<StyledFooter id="footer">
 			<FormSection />
 			<FooterSection />
 		</StyledFooter>
